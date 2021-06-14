@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Agropezim Group C.A. </title>
+	
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/estilos.css"   rel="stylesheet">
+
+    <!-- normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+ 
+	<!-- carrusel para productos -->
+	<script src="js/jquery.bxslider.min.js"></script>
+    <!--<script src="dist/itemslide.vanilla.min.js"></script>-->
+	<!--Styles-->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+ 
+	
+  </head>
+  
+<body class="home" >
+    <!--<h1>Hello, world!</h1> -->
+<!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> -->
+    <div class="container"  id="cabecera">	
+        <div class="container" id="containerCentral">
+            <!-- Brand and toggle get grouped for better mobile display -->
+             <!---->
+             <div class="navbar-header">
+               <a class="navbar-brand" href="index.html" ><img src="images/logo_agropezim.png" class="header" id="logo"   />
+                </a>  <!--importante el data-target debe apuntar al menu a expandis u ocultar--> 
+				<button type="button" class="navbar-toggle" onclick="estirarContainer()" data-toggle="collapse" data-target="#caja-iconos" style="margin-top:60px;"><img src="images/menu.jpg"  />
+				</button> 				
+            </div>
+ 
+			<!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="caja-iconos" >
+ 
+                <ul class="nav navbar-nav navbar-right" style="margin-top:50px; text-align:center" id="caja-iconos">
+                    <!-- -->
+                    <li class="boton_menu " >
+                        <a href="nosotros.html" ><img src="images/nosotros.jpg" class="hidden-xs btn_nosotros  "  />
+                        <label class="visible-xs" align="center"   ><h2> <span class="label label-default  "> Nosotros </span></h2></label>
+						</a>
+                    </li>
+                    <li class="boton_menu "  >
+                        <a href="clientes.html" ><img src="images/clientes.jpg" class="hidden-xs btn_clientes clientes "  />
+						<label class="visible-xs" align="center"  ><h2> <span class="label label-default "> Clientes</span></h2> </label>
+						</a>
+                    </li>
+                    <li class="boton_menu ">
+                         <a href="#" ><img src="images/productos.jpg" class="hidden-xs btn_productos productos colorear"  style="width:30px;" />
+                         <label class="visible-xs colorear" align="center"  ><h2> <span class="label label-default"> Productos</span></h2> </label>
+						 </a>
+                    </li>
+					<li class="boton_menu ">
+                         <a href="servicios.html" ><img src="images/servicios.jpg"class="hidden-xs btn_servicios" />
+						 <label class="visible-xs " align="center" onclick="location.href='servicios.html';"><h2> <span class="label label-default"> Noticias</span></h2> </label>
+						 </a>
+                    </li>
+					<li class="boton_menu ">
+                         <a href="noticias.html" ><img src="images/noticias.jpg"class="hidden-xs btn_noticias" />
+						 <label class="visible-xs " align="center" onclick="location.href='noticias.html';"><h2> <span class="label label-default"> Servicios</span></h2> </label>
+						 </a>
+                    </li>
+					<li class="boton_menu ">
+                         <a href="contactos.php" ><img src="images/contactos.jpg"class="hidden-xs btn_contacto contactos " />
+						 <label class="visible-xs " align="center"  onclick="location.href='contactos.php';"><  ><h2> <span class="label label-default"> Contactos</span></h2> </label>
+						 </a>
+                    </li>
+                </ul>
+           </div> 
+            <!--  primera linea naranja-->   
+           <hr class="hr_arriba" /> 
+            <div class="container" style="margin-left:-30px;">
+				      <table >
+				        <tr>
+						  <td class="estilo_imagenes">
+						    <a href="http://agropezimgroup1.mercadoshops.com.ve/motores-sumergibles-varuna-127186347xJM" target="_blank"  /> <img src="images/motor_01.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Motor y Bomba Sumergible Marca Varuna de 15 Hp 220v 6"</label></a>
+						  </td>
+						  <td class="estilo_imagenes">
+						     <a href="http://agropezimgroup1.mercadoshops.com.ve/empalmes-sumergibles-de-maxima-resistencia-gt1gt2-127249197xJM" target="_blank"   /> <img src="images/empalme_03.3a.jpg" align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Empalmes Sumergibles De Máxima Resistencia Gt1/Gt2 </label></a> 
+						  </td>
+						  <td class="estilo_imagenes">
+						     <a href="http://agropezimgroup1.mercadoshops.com.ve/motores-sumergibles-varuna-trifasicos-220v-de-55-hp-144782163xJM" target="_blank"   /> <img src="images/motor_01.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Motores Sumergibles Varuna Trifasicos 220v 6" De 5.5 Hp </label></a>
+						  </td>
+						 </tr>
+						 <tr>
+						  <td class="estilo_imagenes">
+						     <a href="http://agropezimgroup1.mercadoshops.com.ve/motor-sumergible-marca-varuna-de-75-hp-220v--144785364xJM" target="_blank"   /> <img src="images/motor_01.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Motor Sumergible Marca Varuna De 7.5 Hp 220v 6"</label></a>
+						  </td>	
+						  <td class="estilo_imagenes">
+						     <a href="http://agropezimgroup1.mercadoshops.com.ve/motor-sumergible-marca-varuna-de-10-hp-220v--144786928xJM" target="_blank"   /> <img src="images/motor_01.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Motor Sumergible Marca Varuna De 10 Hp 220v 6"</label></a>
+						  </td>
+						  <td class="estilo_imagenes">
+						     <a href="http://agropezimgroup1.mercadoshops.com.ve/cable-plano-st-sumergible-3x12-144825728xJM" target="_blank"   /> <img src="images/cable_02.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Cable Plano St Sumergible 3x12</label></a>
+						  </td>
+						 </tr>
+						 <tr>
+						  <td class="estilo_imagenes">
+						     <a href="http://agropezimgroup1.mercadoshops.com.ve/cable-plano-st-sumergible-3x10-144827520xJM" target="_blank"   /> <img src="images/cable_02.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Cable Plano St Sumergible 3x10</label></a>
+						  </td>
+						  <td class="estilo_imagenes">
+						     <a href="http://agropezimgroup1.mercadoshops.com.ve/cable-plano-st-sumergible-3x8-144829460xJM" target="_blank"   /> <img src="images/cable_02.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Cable Plano St Sumergible 3x8</label></a>
+						  </td>
+						  <td class="estilo_imagenes">
+						     <a href="http://agropezimgroup1.mercadoshops.com.ve/cable-plano-st-sumergible-3x6-144830925xJM" target="_blank"   /> <img src="images/cable_02.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Cable Plano St Sumergible 3x6</label></a>
+						  </td>
+						 </tr>
+						 <tr>
+						  <td class="estilo_imagenes">
+						     <a href="http://agropezimgroup1.mercadoshops.com.ve/cable-plano-st-sumergible-3x4-144833853xJM" target="_blank"   /> <img src="images/cable_02.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Cable Plano St Sumergible 3x4</label></a>
+						  </td>
+						  <td class="estilo_imagenes">
+						     <a href="http://agropezimgroup1.mercadoshops.com.ve/motor-sumergibles-varuna-15-hp-trifasico-220v-147712760xJM" target="_blank"   /> <img src="images/motor_01.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
+							 <label class="color_letras_productos" >Motor Sumergibles Varuna 15 Hp Trifasico 220v</label></a>
+						  </td>
+						</tr>  
+					  </table>
+				   
+	    </div>
+        <!-- /.container -->
+     <!--  fin recuadro1 </div>  -->
+   </div>
+
+	<!--  tercera linea naranja-->  
+	<hr class="hr_arriba" />  
+	<!-- footer-->
+	<div class="pata">
+		<p class="descripcion_central" ><br>  Agropezim Group C.A. RIF: J-404095969 Venezuela, San Felipe - Estado Yaracuy. <br>Todos los Derechos Reservados 2014</p>
+	</div>
+	
+	</div>	
+	
+    <script>
+		 window.onload = function () {
+			showhome();
+			$("#slider3").tinycarousel({ interval: false,animationTime: 1000,intervalTime: 3000 });
+	        var slider1 = $("#slider3").data("plugin_tinycarousel");
+		}
+		
+		function showhome(){
+				  $(".header").animate({width: 350}, 1000);
+				  $(".productos").animate({width:94},1000);
+		}
+
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+						  mode: 'fade',
+						  captions: true,
+						  nextSelector: '#slider-next',
+						  prevSelector: '#slider-prev',
+						  nextText: 'Adelante',
+						  prevText: 'Atrás',
+						  slideWidth: 900, 
+						  pager: false,
+						   
+						});
+		});
+
+    </script>
+    </script>
+</div>
+ 
+  </body>
+</html>
