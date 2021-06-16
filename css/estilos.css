@@ -307,6 +307,7 @@ padding-bottom: 0px;
 	text-align:center;
 	color:white;
 	 z-index: 0;
+   font-size: 18px;
 }
 
 
@@ -490,6 +491,7 @@ border-color: #CCCCCC #666666 #666666 #CCCCCC /*Creamos un marco para acentuar e
  .letras_mas_grandes{
 	 font-size:22px;
 	 color:rgb(24,56,95);
+   padding:20px;
  }
 
  .color_letras{
@@ -628,7 +630,7 @@ textarea {
   .color_letras_servicios{
 
 	 color:rgb(255,255,255);
-	 padding:40px;
+	 padding:20px;
  }
 
   .color_letras_servicios2 {
