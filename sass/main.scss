@@ -1,1 +1,17 @@
 @import "../bootstrap/scss/bootstrap";
+
+/*
+ agregando parametrizacion correcta
+*/
+.home {
+  /*  background:rgb(0,132,202); */
+   background:url(../images/cuadro_fondo2.jpg);
+   background:rgb(0,53,62);
+   background-repeat: repeat;
+}
+
+.home a:hover{
+	opacity: 0.85;
+    background-color: #337ab7;
+	 ;
+}
