@@ -106,7 +106,7 @@
                     </li>
 					<li class="boton_menu ">
                          <!-- cambiar el ancho del logo de 30px a 94px y clase colorear para el sombreado-->
-                         <a href="contactos.php" ><img src="images/contactos.jpg"class="hidden-xs btn_contacto contactos" style="width:94px;" />
+                         <a href="contactos.php" ><img src="images/contactos.jpg"class="hidden-xs btn_contacto" style="width:94px;" />
 						 <label class="visible-xs colorear" align="center" onclick="location.href='contactos.php';"  ><h2> <span class="label label-default"> Contactos</span></h2> </label>
 						 </a>
                     </li>
