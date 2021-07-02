@@ -73,7 +73,8 @@
         <div class="container" id="containerCentral">
             <!-- Brand and toggle get grouped for better mobile display -->
              <div class="navbar-header">
-               <a class="navbar-brand" href="index.html" ><img src="images/logo_agropezim.png" class="header " id="logo" />
+                <!-- eliminado la clase header y añadido el style de 350px-->
+               <a class="navbar-brand" href="index.html" ><img src="images/logo_agropezim.png" style="width:350px" id="logo" />
                 </a>  <!--importante el data-target debe apuntar al menu a expandis u ocultar-->
             <button type="button" class="navbar-toggle" onclick="estirarContainer()" data-toggle="collapse" data-target="#caja-iconos" style="margin-top:60px;"><img src="images/menu.jpg"  /></button>
                 </div>
@@ -193,82 +194,98 @@
 
 		function nosotros(){
 
-            hidehome(function(){
+      location.href="nosotros.html";
 
-				location.href="nosotros.html"
-            });
+        //     hidehome(function(){
+        //
+				// location.href="nosotros.html"
+        //     });
 
         }
 
         function contacto(){
 
-            hidehome(function(){
+          location.href="contactos.html";
 
-				location.href="contactos.html";
-            });
+        //     hidehome(function(){
+        //
+				// location.href="contactos.html";
+        //     });
 
         }
 
         function clientes(){
 
-            hidehome(function(){
-
-				location.href="clientes.html"
-            });
-
-        }
+          location.href="clientes.html";
+        //     hidehome(function(){
+        //
+				// location.href="clientes.html"
+        //     });
+        //
+         }
 
         function servicios(){
-            hidehome(function(){
 
-				location.href="servicios.html";
-            });
+          location.href="servicios.html";
+
+
+        //     hidehome(function(){
+        //
+				// location.href="servicios.html";
+        //     });
 
         }
 
         function productos(){
-            hidehome(function(){
 
-				location.href="productos.html"
+          location.href="productos.html";
 
-            });
+
+        //     hidehome(function(){
+        //
+				// location.href="productos.html";
+        //
+        //     });
 
         }
 	    function noticias(){
 
-            hidehome(function(){
+        location.href="noticias.html"
 
-				location.href="noticias.html"
-            });
+        //     hidehome(function(){
+        //
+				// location.href="noticias.html"
+        //     });
 
         }
-		function hidehome(action){
-
-            $(".btn_clientes").animate({height: 94,width: 1},1500,function(){$(".btn_clientes").css("visibility", "hidden");});
-            $(".btn_productos").animate({height: 1,width: 94},1000,function(){$(".btn_productos").css("visibility", "hidden");});
-            $(".btn_servicios").animate({height: 94,width: 1},1500,function(){$(".btn_servicios").css("visibility", "hidden");});
-            $(".btn_nosotros").animate({height: 1,width: 94,top:0},1000,function(){$(".btn_nosotros").css("visibility", "hidden");});
-            $(".btn_noticias").animate({height: 1,width: 94},1500,function(){$(".btn_noticias").css("visibility", "hidden");});
-            $(".btn_contacto").animate({height: 94,width: 1},1600, function(){$(".btn_contacto").css("visibility", "hidden");
-				 //dejar visible todo otra vez antes de irme a la otra pagina
-				 //showhome();
-				 globalTimers=true;
-                 action();
-
-            });
-        }
-		function showhome( ){
-
-            $(".btn_clientes").animate({height: 94,width: 94},900,function(){$(".btn_clientes").css("visibility", "visible");});
-            $(".btn_productos").animate({height: 94/*,width: 0*/},800,function(){$(".btn_productos").css("visibility", "visible");});
-            $(".btn_servicios").animate({/*height: 0,*/width: 94},500,function(){$(".btn_servicios").css("visibility", "visible");});
-            $(".btn_nosotros").animate({height: 94/*,width: 0*/},700,function(){$(".btn_nosotros").css("visibility", "visible");});
-            $(".btn_contacto").animate({height: 94,width: 94},1000, function(){ $(".btn_contacto").css("visibility", "visible");
-
-
-				 globalTimers=false;
-            });
-        }
+    // animación de todos los iconos excepto el logo de agropezim
+		// function hidehome(action){
+    //
+    //         $(".btn_clientes").animate({height: 94,width: 1},1500,function(){$(".btn_clientes").css("visibility", "hidden");});
+    //         $(".btn_productos").animate({height: 1,width: 94},1000,function(){$(".btn_productos").css("visibility", "hidden");});
+    //         $(".btn_servicios").animate({height: 94,width: 1},1500,function(){$(".btn_servicios").css("visibility", "hidden");});
+    //         $(".btn_nosotros").animate({height: 1,width: 94,top:0},1000,function(){$(".btn_nosotros").css("visibility", "hidden");});
+    //         $(".btn_noticias").animate({height: 1,width: 94},1500,function(){$(".btn_noticias").css("visibility", "hidden");});
+    //         $(".btn_contacto").animate({height: 94,width: 1},1600, function(){$(".btn_contacto").css("visibility", "hidden");
+		// 		 //dejar visible todo otra vez antes de irme a la otra pagina
+		// 		 //showhome();
+		// 		 globalTimers=true;
+    //              action();
+    //
+    //         });
+    //     }
+		// function showhome( ){
+    //
+    //         $(".btn_clientes").animate({height: 94,width: 94},900,function(){$(".btn_clientes").css("visibility", "visible");});
+    //         $(".btn_productos").animate({height: 94/*,width: 0*/},800,function(){$(".btn_productos").css("visibility", "visible");});
+    //         $(".btn_servicios").animate({/*height: 0,*/width: 94},500,function(){$(".btn_servicios").css("visibility", "visible");});
+    //         $(".btn_nosotros").animate({height: 94/*,width: 0*/},700,function(){$(".btn_nosotros").css("visibility", "visible");});
+    //         $(".btn_contacto").animate({height: 94,width: 94},1000, function(){ $(".btn_contacto").css("visibility", "visible");
+    //
+    //
+		// 		 globalTimers=false;
+    //         });
+    //     }
 	    function estirarContainer(){
 		}
 
@@ -298,7 +315,8 @@
         },
          girarProductos()
         );
-		$(".header").animate({width: 350}, 1000);
+    // animación del logo agropezim
+		// $(".header").animate({width: 350}, 1000);
 
 		timer = setTimeout('temporizador()', 700);
 		function temporizador() {

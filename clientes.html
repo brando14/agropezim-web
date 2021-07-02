@@ -64,7 +64,8 @@
             <!-- Brand and toggle get grouped for better mobile display -->
              <!---->
              <div class="navbar-header">
-               <a class="navbar-brand" href="index.html" ><img src="images/logo_agropezim.png" class="header"  id="logo"  />
+               <!-- eliminado la clase header y añadido el style de 350px-->
+               <a class="navbar-brand" href="index.html" ><img src="images/logo_agropezim.png" style="width:350px;"  id="logo"  />
                 </a>  <!--importante el data-target debe apuntar al menu a expandis u ocultar-->
 				<button type="button" class="navbar-toggle" onclick="estirarContainer()" data-toggle="collapse" data-target="#caja-iconos" style="margin-top:60px;"><img src="images/menu.jpg"  />
 				</button>
@@ -81,7 +82,8 @@
 						</a>
                     </li>
                     <li class="boton_menu "  >
-                        <a href="#" ><img src="images/clientes.jpg" class="hidden-xs btn_clientes clientes colorear"  style="width:30px;"/>
+                        <!-- cambiar el ancho del logo de 30px a 94px y clase colorear para el sombreado-->
+                        <a href="#" ><img src="images/clientes.jpg" class="hidden-xs btn_clientes clientes"  style="width:94px;"/>
 						<label class="visible-xs" align="center"  ><h2> <span class="label label-default colorear"> Clientes</span></h2> </label>
 						</a>
                     </li>
@@ -135,15 +137,16 @@
 	</div>
 
 	</div>
-    <script>
-		 window.onload = function () {
-			showhome();
-		}
-
-		function showhome(){
-				  $(".header").animate({width:350}, 1000);
-				  $(".clientes").animate({width:94},1000);
-		}
+    <!-- <script>
+    // animación del logo agropezim y clientes
+		//  window.onload = function () {
+		// 	showhome();
+		// }
+    //
+		// function showhome(){
+		// 		  $(".header").animate({width:350}, 1000);
+		// 		  $(".clientes").animate({width:94},1000);
+		// }
 
 		/*$('html').on('keydown' , function(event) {
 			if(! $(event.target).is('input')) {
@@ -155,7 +158,7 @@
 			 }
 			}
 		});*/
-    </script>
+    </script> -->
 </div>
 
   </body>
