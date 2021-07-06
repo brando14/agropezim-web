@@ -10729,5 +10729,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*
+ agregando parametrizacion correcta
+*/
+.home {
+  /*  background:rgb(0,132,202); */
+  background: url(../images/cuadro_fondo2.jpg);
+  background: #00353e;
+  background-repeat: repeat;
+}
+
+.home a:hover {
+  opacity: 0.85;
+  background-color: #337ab7;
+}
 
 /*# sourceMappingURL=main.css.map */

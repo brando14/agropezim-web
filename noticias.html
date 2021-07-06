@@ -77,7 +77,8 @@
             <!-- Brand and toggle get grouped for better mobile display -->
              <!---->
              <div class="navbar-header">
-               <a class="navbar-brand" href="index.html" ><img src="images/logo_agropezim.png" class="header"  id="logo"  />
+                <!-- eliminado la clase header y añadido el style de 350px-->
+               <a class="navbar-brand" href="index.html" ><img src="images/logo_agropezim.png" style="width: 350px;"  id="logo"  />
                 </a>  <!--importante el data-target debe apuntar al menu a expandis u ocultar-->
 				<button type="button" class="navbar-toggle" onclick="estirarContainer()" data-toggle="collapse" data-target="#caja-iconos" style="margin-top:60px;"><img src="images/menu.jpg"  />
 				</button>
@@ -109,13 +110,14 @@
 						 </a>
                     </li>
 					<li class="boton_menu ">
-                         <a href="#" ><img src="images/noticias.jpg" class="hidden-xs btn_noticias noticias colorear" style="width:30px;"/>
+                         <!-- cambiar el ancho del logo de 30px a 94px y clase colorear para el sombreado-->
+                         <a href="#" ><img src="images/noticias.jpg" class="hidden-xs btn_noticias noticias" style="width:94px;"/>
 						 <label class="visible-xs " align="center" onclick="location.href='noticias.html';"><h2> <span class="label label-default "> Noticias</span></h2> </label>
 						 </a>
                     </li>
 					<li class="boton_menu ">
-                         <a href="contactos.php" ><img src="images/contactos.jpg"class="hidden-xs btn_contacto" />
-						 <label class="visible-xs" align="center" onclick="location.href='contactos.php';" ><h2> <span class="label label-default"> Contactos</span></h2> </label>
+                         <a href="contactos.html" ><img src="images/contactos.jpg"class="hidden-xs btn_contacto" />
+						 <label class="visible-xs" align="center" onclick="location.href='contactos.html';" ><h2> <span class="label label-default"> Contactos</span></h2> </label>
 						 </a>
                     </li>
                 </ul>
@@ -210,14 +212,15 @@
 
 	</div>
     <script>
-		 window.onload = function () {
-			showhome();
-		}
-
-		function showhome(){
-				  $(".header").animate({width:350}, 1000);
-				  $(".noticias").animate({width:94},1000);
-		}
+    // función para la animación del logo de agropezim y noticias
+		//  window.onload = function () {
+		// 	showhome();
+		// }
+    //
+		// function showhome(){
+		// 		  $(".header").animate({width:350}, 1000);
+		// 		  $(".noticias").animate({width:94},1000);
+		// }
 
 
 		// Clone applications to get a second collection

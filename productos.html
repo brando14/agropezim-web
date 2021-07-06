@@ -3,7 +3,6 @@
   <head>
   <!-- agregado el meta charset UTF-8 para los carácteres como las tildes y la letra ñ -->
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -41,7 +40,8 @@
             <!-- Brand and toggle get grouped for better mobile display -->
              <!---->
              <div class="navbar-header">
-               <a class="navbar-brand" href="index.html" ><img src="images/logo_agropezim.png" class="header" id="logo"   />
+                <!-- eliminado la clase header y añadido el style de 350px-->
+               <a class="navbar-brand" href="index.html" ><img src="images/logo_agropezim.png" style="width:350px;" id="logo"   />
                 </a>  <!--importante el data-target debe apuntar al menu a expandis u ocultar-->
 				<button type="button" class="navbar-toggle" onclick="estirarContainer()" data-toggle="collapse" data-target="#caja-iconos" style="margin-top:60px;"><img src="images/menu.jpg"  />
 				</button>
@@ -63,7 +63,8 @@
 						</a>
                     </li>
                     <li class="boton_menu ">
-                         <a href="#" ><img src="images/productos.jpg" class="hidden-xs btn_productos productos colorear"  style="width:30px;" />
+                         <!-- cambiar el ancho del logo de 30px a 94px y clase colorear para el sombreado-->
+                         <a href="#" ><img src="images/productos.jpg" class="hidden-xs btn_productos productos"  style="width:94px;" />
                          <label class="visible-xs colorear" align="center"  ><h2> <span class="label label-default"> Productos</span></h2> </label>
 						 </a>
                     </li>
@@ -78,8 +79,8 @@
 						 </a>
                     </li>
 					<li class="boton_menu ">
-                         <a href="contactos.php" ><img src="images/contactos.jpg"class="hidden-xs btn_contacto contactos " />
-						 <label class="visible-xs " align="center"  onclick="location.href='contactos.php';"><  ><h2> <span class="label label-default"> Contactos</span></h2> </label>
+                         <a href="contactos.html" ><img src="images/contactos.jpg"class="hidden-xs btn_contacto contactos " />
+						 <label class="visible-xs " align="center"  onclick="location.href='contactos.html';"><  ><h2> <span class="label label-default"> Contactos</span></h2> </label>
 						 </a>
                     </li>
                 </ul>
@@ -95,7 +96,7 @@
 						  </td>
 						  <td class="estilo_imagenes">
 						     <a href="http://agropezimgroup1.mercadoshops.com.ve/empalmes-sumergibles-de-maxima-resistencia-gt1gt2-127249197xJM" target="_blank"   /> <img src="images/empalme_03.3a.jpg" align="center" class="img-responsive" alt="Imagen responsive"   />
-							 <label class="color_letras_productos" >Empalmes Sumergibles De M�xima Resistencia Gt1/Gt2 </label></a>
+							 <label class="color_letras_productos" >Empalmes Sumergibles De Máxima Resistencia Gt1/Gt2 </label></a>
 						  </td>
 						  <td class="estilo_imagenes">
 						     <a href="http://agropezimgroup1.mercadoshops.com.ve/motores-sumergibles-varuna-trifasicos-220v-de-55-hp-144782163xJM" target="_blank"   /> <img src="images/motor_01.3a.jpg"  align="center" class="img-responsive" alt="Imagen responsive"   />
@@ -158,15 +159,15 @@
 
     <script>
 		 window.onload = function () {
-			showhome();
+			// showhome();
 			$("#slider3").tinycarousel({ interval: false,animationTime: 1000,intervalTime: 3000 });
 	        var slider1 = $("#slider3").data("plugin_tinycarousel");
 		}
-
-		function showhome(){
-				  $(".header").animate({width: 350}, 1000);
-				  $(".productos").animate({width:94},1000);
-		}
+    // animación del logo de agropezim y logo de productos
+		// function showhome(){
+		// 		  $(".header").animate({width: 350}, 1000);
+		// 		  $(".productos").animate({width:94},1000);
+		// }
 
 		$(document).ready(function(){
 		  $('.bxslider').bxSlider({
