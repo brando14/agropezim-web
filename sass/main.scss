@@ -1,3 +1,18 @@
+
+$navbar-nav-link-padding-x:         .5rem;
+
+
+// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+
+$navbar-brand-margin-end:           1rem;
+
+$navbar-toggler-padding-y:          .25rem;
+$navbar-toggler-padding-x:          .75rem;
+$navbar-toggler-transition:         box-shadow .15s ease-in-out;
+
+
+
+
 @import "../bootstrap/scss/bootstrap";
 
 /*

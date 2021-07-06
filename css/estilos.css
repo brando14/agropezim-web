@@ -307,7 +307,6 @@ padding-bottom: 0px;
 	text-align:center;
 	color:white;
 	 z-index: 0;
-   font-size: 18px;
 }
 
 
@@ -491,7 +490,6 @@ border-color: #CCCCCC #666666 #666666 #CCCCCC /*Creamos un marco para acentuar e
  .letras_mas_grandes{
 	 font-size:22px;
 	 color:rgb(24,56,95);
-   padding:20px;
  }
 
  .color_letras{
@@ -572,7 +570,6 @@ label {
     display:block;
     margin-top:20px;
     letter-spacing:1px;
-    font-size:22px;
 }
 .formulario	 {
     display:block;
@@ -580,7 +577,6 @@ label {
     width:510px;
     color: #666666;
     font-family:Arial;
-
 }
 form {
     margin:0 auto;
@@ -591,15 +587,16 @@ input, textarea {
     width:380px;
     height:27px;
    /* background:#666666;*/
-    border:3px solid #f6f6f6;
+    border:2px solid #f6f6f6;
     padding:10px;
     margin-top:5px;
-    font-size:22px;
+    font-size:10px;
     color:#ffffff;
 }
 
 textarea {
-    height:150px;
+    height:100px;
+    
 }
 
 #submit {
@@ -630,11 +627,11 @@ textarea {
   .color_letras_servicios{
 
 	 color:rgb(255,255,255);
-	 padding:20px;
+	 padding:40px;
  }
 
   .color_letras_servicios2 {
-   font-size:18px;
+     font-size:18px;
 	 color:rgb(0,53,62);
 	 background-color:rgb(255,255,255);
 	 text-decoration:none;
@@ -643,7 +640,7 @@ textarea {
  .color_letras_servicios2:hover{color:rgb(50,103,112);}
 
  .color_letras_servicios2 ,a:link {
-  text-decoration: none;
+ text-decoration: none;
 }
 
 
@@ -684,7 +681,7 @@ textarea {
  }
 
 .color_letras_productos {
-   font-size:18px;
+     font-size:18px;
 	 color:rgb(0,53,62);
  	 text-decoration:none;
 
