@@ -1,3 +1,15 @@
+// ancho del container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+
+
+
 
 @import "../bootstrap/scss/bootstrap";
 
@@ -90,7 +102,7 @@ footer {
 
   padding-bottom: 0px;
   margin-bottom: 0px;
-  height: 90px;
+  height: 109px;
 }
    .viewport{
     height: 0px;
@@ -154,7 +166,7 @@ padding-bottom: 0px;
 /*responsividad menor que */
 @media (max-width: 600px) {
   .boton_menu a img{
-    margin-left: 300px;
+    margin-left: 220px;
   }
 
   .viewport{
@@ -176,7 +188,7 @@ padding-bottom: 0px;
 /*responsividad menor que */
 @media (max-width: 500px) {
   .boton_menu a img{
-    margin-left: 300px;
+    margin-left: 220px;
   }
 
   .viewport{
@@ -260,9 +272,8 @@ padding-bottom: 0px;
   /* background-color:rgb(110,150,178);  */
  /*de gris a blanco todo este fondo*/
   background-color:rgb(255,255,255);
-  margin-top: 20px;
-  height:30%;
-  width: 100%;
+  margin-top:-20px;
+  height:20%;
 }
 .hr_arriba {
   /*border-color: rgb(255,121,0);*/
@@ -270,7 +281,6 @@ padding-bottom: 0px;
   background-color: rgb(242,221,51);
   /*background-color:rgb(255,121,0);*/
   height: 3px;
-  width: 100%;
   margin-bottom: 0px;
   padding-bottom: 0px;
 
@@ -295,7 +305,7 @@ padding-bottom: 0px;
 }
 .carrusel {
  /* box-shadow: 5px 1px 20px 1px #000; */
-  width: 60%;
+  width:50%;
   margin-left:15%;
    z-index: 0;
 }
@@ -636,7 +646,7 @@ textarea {
   .color_letras_servicios{
     color:rgb(0,53,62);
     padding:30px;
-    font-size:20px;
+    font-size:22px;
     text-decoration:none;
     text-align: justify;
     width: inherit;
