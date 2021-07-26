@@ -9,6 +9,7 @@ Página Web Agropezim Group C.A.
 ```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
+
 sudo ./aws/install
 
 ```
@@ -26,7 +27,7 @@ git clone https://github.com/brando14/agropezim-web
 
 
 ```
-cd agropezim-web
+cd agropezim-web/
 ```
 
 -  El styles. css ubicado en la carpeta css, es lo que yo estoy editando.
