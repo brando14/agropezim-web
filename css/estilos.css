@@ -26,7 +26,7 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-    height: 50%;
+    height: 60%;
 }
 
 header.carousel .item,
@@ -427,7 +427,7 @@ padding-bottom: 0px;
 
 .serviciosAgropezim{
     margin-left:1%;
-	  margin-right:5%;
+    margin-right:5%;
 
 }
 
@@ -491,11 +491,6 @@ border-color: #CCCCCC #666666 #666666 #CCCCCC /*Creamos un marco para acentuar e
 	 font-size:22px;
 	 color:rgb(24,56,95);
  }
-
- .sangria{
-   padding:20px;
- }
-
 
  .color_letras{
 	 color:rgb(103,103,103);
@@ -576,24 +571,17 @@ label {
     margin-top:20px;
     letter-spacing:1px;
 }
-
-
-
 .formulario	 {
     display:block;
     margin:0 auto;
     width:510px;
     color: #666666;
-    font-size: 22px;
-    /* font-family:Arial; */
+    font-family:Arial;
 }
 form {
     margin:0 auto;
     width:400px;
-    font-size:20px;
 }
-
-
 
 input, textarea {
     width:380px;
@@ -637,31 +625,22 @@ textarea {
  }
 
   .color_letras_servicios{
-    color:rgb(0,53,62);
-    padding:30px;
-    font-size:22px;
-    text-decoration:none;
-    text-align: justify;
-    width: inherit;
+
+	 color:rgb(255,255,255);
+	 padding:40px;
  }
-
-
 
   .color_letras_servicios2 {
-     font-size:22px;
-     color:rgb(0,53,62);
-     background-color:rgb(255,255,255);
-     text-decoration:none;
+  font-size:18px;
+	 color:rgb(0,53,62);
+	 background-color:rgb(255,255,255);
+	 text-decoration:none;
  }
 
- .color_letras_servicios2:hover{
-     color:rgb(50,103,112);
-
- }
+ .color_letras_servicios2:hover{color:rgb(50,103,112);}
 
  .color_letras_servicios2 ,a:link {
-   text-decoration: none;
-
+ text-decoration: none;
 }
 
 
@@ -702,7 +681,7 @@ textarea {
  }
 
 .color_letras_productos {
-     font-size:18px;
+  font-size:18px;
 	 color:rgb(0,53,62);
  	 text-decoration:none;
 

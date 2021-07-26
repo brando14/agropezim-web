@@ -1,35 +1,434 @@
+/* Fondo */
+
+
+/* color del body */
+.home {
+  /*  background:rgb(0,132,202); */
+  background: url(../images/cuadro_fondo2.jpg);
+  background: #00353e;
+  background-repeat: repeat;
+  padding-top: 100px;
+  font-family: sans-serif;
+}
+
+/* selección del body */
+/* .home a:hover{
+	opacity: 0.85;
+    background-color: #337ab7;
+	 ;
+} */
+/* Caracteristicas de la barra de navegación: */
+
+/* Tamaño del logotipo */
 #logo {
 
-  width: 350px;
+  width: 36.3vw;
 }
 
 
+/* fondo del container del navbar */
+
+nav {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#cabecera {
+  box-shadow: 5px 1px 20px 1px #000;
+  /* background-color:rgb(110,150,178);  */
+  /*de gris a blanco todo este fondo*/
+  background-color: white;
+  border: 100px "solid" #00353e;
+  margin-top: -20px;
+  height: 20%;
+
+}
+
+
+
+
+
+/* linea amarilla divisiora */
+
+
+.linea_divisora {
+    /*border-color: rgb(255,121,0);*/
+    border-color: #f2dd33;
+    background-color: #f2dd33;
+    /*background-color:rgb(255,121,0);*/
+    height: 9px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+/* Para que los items del navbar se muestren a la izquierda de la pantalla */
 
 #navbarSupportedContent {
     justify-content: flex-end;
+
 }
 
+
+
+/* base del template */
+
+.base {
+  /*background-image: url(../images/footer2.jpg);*/
+  /* height: 10%;
+  background-size: 100% 100%; */
+  background: #004c59;
+  color: white;
+  font-size: 22px;
+
+}
+
+
+
+/* seccion nosotros */
+
+
+.txt_quienes {
+  text-align: center;
+  color: white;
+  margin-left: 15%;
+  width:70%;
+
+}
+
+
+.letras_mas_grandes{
+  font-size: 22px;
+  color: rgb(24,56,95);
+  text-align: justify;
+}
+
+
+
+
+ .panel-body {
+   margin-top: 0px;
+   padding-top: 0px;
+   padding-left: 15%;
+   padding-right: 15%;
+   z-index: 0;
+	 width:130%;
+
+
+ }
+
+
+/* seccion productos */
+
+/*  responsividad de las imagenes */
+
+
+
+
+
+.img-responsive{
+
+  width: 35vw;
+  height: 37vh;
+  object-fit: scale-down;
+
+}
+
+
+#productos{
+
+  justify-content: center;
+}
+
+
+.card-box {
+    /* border: 0; */
+    padding: 20px;
+    /* box-shadow: 0px 0px 10px 0px #c5c5c5; */
+    margin-bottom: 30px;
+
+    /* border-radius: 10px; */
+
+
+}
+.card-box .card-thumbnail {
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: 1s;
+
+}
+
+.card-box .card-thumbnail img{
+  padding: 50px ;
+  object-fit: fill;
+}
+/* .card-box .card-thumbnail:hover {
+    transform: scale(1.2);
+} */
+
+
+.card-box h3 a {
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+.estilo_imagenes{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    flex: 1;
+    display: inline-flex;
+ }
+
+ .estilo_imagenes a img{
+
+   display: flex;
+ }
+
+.color_letras_productos {
+  font-size: 18px;
+  text-align: center;
+  color:rgb(0,53,62);
+ 	text-decoration:none;
+
+ }
+
+
+
+
+/* seccion servicios */
+
+
+.color_letras_servicios2 {
+  font-size: 22px;
+  color: rgb(0,53,62);
+  background-color:rgb(255,255,255);
+  text-decoration:none;
+}
+
+.color_letras_servicios2:hover{color:rgb(50,103,112);}
+
+.color_letras_servicios2 ,a:link {
+  text-decoration: none;
+}
+
+
+.color_letras_servicios {
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgb(0,53,62);
+  background-color:rgb(255,255,255);
+  text-decoration:none;
+}
+
+.sangria {
+
+  padding: 60px;
+  text-align: justify;
+
+}
+
+
+
+#myList li{
+
+  list-style: disc;
+  padding-top: 2vh;
+}
+
+
+.serviciosAgropezim{
+    margin-left:1%;
+    margin-right:5%;
+
+}
+
+
+/*seccion de la ventana modal*/
+
+/* Z-index of #mask must lower than #boxes .window */
+#mask {
+ position: absolute;
+ z-index:9000;
+ background-color:#000;
+ background-color:rgb(0,53,62);
+ display: none;
+
+}
+
+#boxes .window {
+  margin-top: 50px;
+  position: absolute;
+  display:none;
+  z-index:9100;
+  /*padding:20px;*/
+  font-size:22px;
+  color:rgb(0,53,62);
+  background-color:rgb(255,255,255);
+}
+
+
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+padding-top: 20px;
+ width:375px;
+ height:203px;
+
+}
+
+
+
+/* seccion contacto */
+
+
+myButton {
+ -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+ -webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+ box-shadow: 0px 1px 0px 0px #f0f7fa;
+ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
+ background:-moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+ background:-webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+ background:-o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+ background:-ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+ background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2',GradientType=0);
+ background-color:#33bdef;
+ -moz-border-radius:6px;
+ -webkit-border-radius:6px;
+ border-radius:6px;
+ border:1px solid #057fd0;
+ display:inline-block;
+ cursor:pointer;
+ color:#ffffff;
+ font-family:Arial;
+ font-size:15px;
+ font-weight:bold;
+ padding:6px 24px;
+ text-decoration:none;
+ text-shadow:0px -1px 0px #5b6178;
+}
+.myButton:hover {
+ background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
+ background:-moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+ background:-webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+ background:-o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+ background:-ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+ background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef',GradientType=0);
+ background-color:#019ad2;
+}
+.myButton:active {
+ position:relative;
+ top:1px;
+}
+
+
+label {
+   display:block;
+   margin-top: 20px;
+   letter-spacing:1px;
+}
+.formulario	 {
+   display:block;
+   margin:0 auto;
+   width: 50%;
+   color: #666666;
+   font-size: 22px;
+
+}
+form {
+   margin:0 auto;
+   width: 50%;
+}
+
+input, textarea {
+   width: 380px;
+   height:27px;
+  /* background:#666666;*/
+   border:2px solid #f6f6f6;
+   padding:10px;
+   margin-top:5px;
+   font-size: 20px;
+   color:#ffffff;
+}
+
+textarea {
+   height:100px;
+
+}
+
+#submit {
+   width:85px;
+   height:35px;
+   border:none;
+   margin-top:20px;
+   cursor:pointer;
+}
 
 /* Responsive Styles */
 
 /*responsividad mayor que */
-@media (min-width: 1199px) {
 
 
-  .visible-xs{
+@media (min-width: 1400px) {
 
-    display: none;
+
+/* imagenesde productos  */
+
+
+.hidden-xs {
+  height: 109px;
+}
+
+
+.visible-xs {
+  display: none;
+}
+
+
+
+  .img-responsive{
+
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+
+
   }
 
 
-  .hidden{
+/* logotipo */
 
-    display: block;
+  #logo{
+    width: 350px;
+  }
+
+
+  .letras_mas_grandes{
+    font-size: 22px;
+    color: rgb(24,56,95);
+    text-align: justify;
+  }
+
+  .base {
+    font-size: 22px;
+
   }
 
 
 
-  .hr_arriba {
+
+
+  .linea_divisora{
     margin-top: 0px;
     z-index: 999;
     width: 100%;
@@ -46,40 +445,39 @@
     height: 0px;
   }
 
-  .productogiro {
-    height: 0px;
-  }
+
 }
-/*responsividad mayor que */
-/*responsividad mayor que */
-/*responsividad mayor que */
+
+
 a {
   padding-bottom: 0px;
 }
 
 /*responsividad menor que */
 
-@media (max-width: 1199px) {
+@media (max-width: 1400px) {
 
 
-  #logo{
-
-    width: 100%;
-  }
-
-
-  .hidden-xs{
+  .visible-xs {
     display: none;
   }
 
 
-  .visible-xs{
-    display: block;
+  .base{
+    font-size: 2vw;
+  }
+
+  .img-responsive{
+
+    width: 22,7vw;
+    height: 21,2vh;
+    justify-content: center;
+    object-fit: scale-down;
+
   }
 
 
-
-  .hr_arriba {
+  .linea_divisora {
     margin-top: 0px;
     z-index: 999;
     width: 100%;
@@ -92,6 +490,122 @@ a {
 
   .productogiro {
     height: 0px;
+
+
+
+}
+
+@media (max-width: 1199px) {
+
+
+
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .letras_mas_grandes{
+    font-size: 2.3vw;
+  }
+
+
+  .color_letras_servicios2 {
+
+    font-size: 2.3vw;
+    margin: 0;
+
+  }
+
+  .color_letras_servicios{
+    font-size: 2vw;
+
+  }
+
+}
+
+
+
+
+@media (max-width: 992px) {
+
+  .hidden-xs {
+    display: none;
+
+  }
+
+  .visible-xs {
+    display: block;
+
+  }
+
+}
+
+
+
+@media (max-width: 768px;) {
+
+
+  .base {
+
+    font-size: 18px;
+
+}
+
+
+
+  }
+
+
+@media (max-width: 576px) {
+
+
+  #boxes .window {
+    margin-top: 0;
+    position: absolute;
+    display:none;
+    z-index:9100;
+    /*padding:20px;*/
+    font-size:22px;
+    color:rgb(0,53,62);
+    background-color:rgb(255,255,255);
+  }
+
+
+  .color_letras_servicios2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.5w;
+  }
+
+
+  .sangria{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+
+
+
+  .txt_quienes {
+
+    font-size: 1.5vw;
+
+
+  }
+
+
+  #myList li{
+
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+  }
+
+
+
 
 
 

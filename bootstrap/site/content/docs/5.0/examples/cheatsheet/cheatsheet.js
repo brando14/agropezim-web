@@ -25,8 +25,8 @@
       toast.show()
     })
 
-  // Disable empty links and submit buttons
-  document.querySelectorAll('[href="#"], [type="submit"]')
+  // Disable empty links
+  document.querySelectorAll('[href="#"]')
     .forEach(function (link) {
       link.addEventListener('click', function (event) {
         event.preventDefault()
@@ -41,11 +41,6 @@
     }
 
     var link = document.querySelector('.bd-aside a[href="' + hash + '"]')
-
-    if (!link) {
-      return
-    }
-
     var active = document.querySelector('.bd-aside .active')
     var parent = link.parentNode.parentNode.previousElementSibling
 
