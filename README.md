@@ -30,10 +30,20 @@ git clone https://github.com/brando14/agropezim-web
 cd agropezim-web/
 ```
 
--  El styles. css ubicado en la carpeta css, es lo que yo estoy editando.
+- Se encuentran todo los templates que van a ser usados.
 
--  para subir  los cambios:
+-  El styles.css ubicado en la carpeta css, es lo que yo estoy editando.
+
+-  para subir  los cambios cada vez que los hagas:
 
 ```
 aws s3 sync .  s3://testagropezim --acl public-read
+```
+
+- Link de Agropezim-test:
+
+
+```
+https://testagropezim.s3.us-east-2.amazonaws.com/index.html
+
 ```
