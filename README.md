@@ -16,11 +16,15 @@ sudo ./aws/install
 -  Necesitas tener tus claves de AWS.
 
 -  Clonar el repositorio:
-``
+
+```
 git clone https://github.com/brando14/agropezim-web
 
 ```
+
 - Ir a la carpeta principal:
+
+
 ```
 cd agropezim-web
 ```
