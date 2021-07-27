@@ -1,9 +1,5 @@
 /* Fondo */
 
-html,
-body {
-    /*height: 100%;*/
-}
 
 /* color del body */
 .home {
@@ -11,9 +7,8 @@ body {
   background: url(../images/cuadro_fondo2.jpg);
   background: #00353e;
   background-repeat: repeat;
-  padding: 0;
+  padding-top: 100px;
   font-family: sans-serif;
-  margin: 0;
 }
 
 /* selección del body */
@@ -27,56 +22,26 @@ body {
 /* Tamaño del logotipo */
 #logo {
 
-  margin-top: 10px;
-  height: auto;
-
-  width: 20vw;
-}
-
-/* Tamaño de iconos*/
-
-.hidden-xs {
-
-  width: 5vw;
-
+  width: 36.3vw;
 }
 
 
 /* fondo del container del navbar */
 
 nav {
-  /* background-color:rgb(110,150,178);  */
-  /*de gris a blanco todo este fondo*/
-  background-color: white;
-  border: 100px "solid" #00353e;
-  margin-top: 10px;
-  margin-bottom: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 120px;
-}
-
-
-.items {
-
-  height: 110px;
-  padding-bottom: 0px;
-
-
-
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 #cabecera {
+  box-shadow: 5px 1px 20px 1px #000;
   /* background-color:rgb(110,150,178);  */
   /*de gris a blanco todo este fondo*/
   background-color: white;
   border: 100px "solid" #00353e;
-  margin-top: 0;
-  height: 80%;
-  padding-left: 20px;
-  padding-right: 20px;
-  position: relative;
-
+  margin-top: -20px;
+  height: 20%;
 
 }
 
@@ -92,10 +57,9 @@ nav {
     border-color: #f2dd33;
     background-color: #f2dd33;
     /*background-color:rgb(255,121,0);*/
-    height: 6px;
+    height: 9px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    padding-top: 10px;
 }
 
 
@@ -111,24 +75,13 @@ nav {
 
 /* base del template */
 
-footer{
-  padding-bottom: 5px;
-  margin-bottom: 0 auto;
-
-
-
-}
-
 .base {
   /*background-image: url(../images/footer2.jpg);*/
   /* height: 10%;
   background-size: 100% 100%; */
   background: #004c59;
   color: white;
-  font-size: 1vw;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+  font-size: 22px;
 
 }
 
@@ -142,16 +95,16 @@ footer{
   color: white;
   margin-left: 15%;
   width:70%;
-  margin-top: 0;
 
 }
 
 
 .letras_mas_grandes{
-  font-size: 1.3vw;
+  font-size: 22px;
   color: rgb(24,56,95);
   text-align: justify;
 }
+
 
 
 
@@ -256,7 +209,7 @@ footer{
 
 
 .color_letras_servicios2 {
-  font-size: 1.3vw;
+  font-size: 22px;
   color: rgb(0,53,62);
   background-color:rgb(255,255,255);
   text-decoration:none;
@@ -271,7 +224,7 @@ footer{
 
 .color_letras_servicios {
   margin-top: 10px;
-  font-size: 1vw;
+  font-size: 20px;
   color: rgb(0,53,62);
   background-color:rgb(255,255,255);
   text-decoration:none;
@@ -289,7 +242,7 @@ footer{
 #myList li{
 
   list-style: disc;
-
+  padding-top: 2vh;
 }
 
 
@@ -385,9 +338,9 @@ label {
    letter-spacing:1px;
 }
 .formulario	 {
-   display:block;
+   display: block;
    margin:0 auto;
-   width: 100%;
+   width: 50%;
    color: #666666;
    font-size: 22px;
 
@@ -434,9 +387,44 @@ textarea {
 /* imagenesde productos  */
 
 
+.hidden-xs {
+  height: 109px;
+}
+
+
 .visible-xs {
   display: none;
 }
+
+
+
+  .img-responsive{
+
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+
+
+  }
+
+
+/* logotipo */
+
+  #logo{
+    width: 350px;
+  }
+
+
+  .letras_mas_grandes{
+    font-size: 22px;
+    color: rgb(24,56,95);
+    text-align: justify;
+  }
+
+  .base {
+    font-size: 22px;
+
+  }
 
 
 
@@ -477,6 +465,9 @@ a {
   }
 
 
+  .base{
+    font-size: 2vw;
+  }
 
   .img-responsive{
 
@@ -510,21 +501,26 @@ a {
 
 
 
-/*
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
   .letras_mas_grandes{
     font-size: 2.3vw;
-  } */
+  }
 
 
-  /* .color_letras_servicios2 {
+  .color_letras_servicios2 {
 
     font-size: 2.3vw;
     margin: 0;
 
-  } */
+  }
 
-  /* .color_letras_servicios{
-    font-size: 2vw; */
+  .color_letras_servicios{
+    font-size: 2vw;
 
   }
 
@@ -536,12 +532,12 @@ a {
 @media (max-width: 992px) {
 
   .hidden-xs {
-    display: block;
+    display: none;
 
   }
 
   .visible-xs {
-    display: none;
+    display: block;
 
   }
 
@@ -552,6 +548,11 @@ a {
 @media (max-width: 768px;) {
 
 
+  .base {
+
+    font-size: 18px;
+
+}
 
 
 
@@ -573,11 +574,11 @@ a {
   }
 
 
-  /* .color_letras_servicios2{
+  .color_letras_servicios2{
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 1.5w;
-  } */
+  }
 
 
   .sangria{
