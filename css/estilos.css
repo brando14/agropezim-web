@@ -6,10 +6,9 @@
 
 /* Global Styles */
 
-html,
+/*html,
 body {
     /*height: 100%;*/
-}
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
@@ -70,7 +69,7 @@ header.carousel .fill {
 /* Footer Styles */
 
 footer {
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 /* Responsive Styles */
@@ -173,10 +172,10 @@ padding-bottom: 0px;
     margin-top: 0px;
   }
 
-  .navbar-collapse{
+  /* .navbar-collapse{
 
 
-  }
+  } */
 }
 /*responsividad menor que */
 @media (max-width: 500px) {
@@ -480,12 +479,12 @@ border-color: #CCCCCC #666666 #666666 #CCCCCC /*Creamos un marco para acentuar e
 .btn_descarga{height:40px; width:180px; color:rgb(0,43,69); background-color:white;font-size: 16px;font-weight:bold; }
 .btn_descarga:hover{height:40px; width:180px;color:white; background-color:rgb(0,43,69);font-size:16px;font-weight:bold;  }
 
-.colorear {
+/* .colorear {
 -webkit-filter:/* Chrome y Safari */ brightness(0.5);
--moz-filter:/* Mozilla */brightness(0.5);
--ms-filter:/* Internet Explorer */brightness(0.5);
+-moz-filter:/* Mozilla */ brightness(0.5);
+-ms-filter:/* Internet Explorer */ brightness(0.5);
 -o-filter:/* Opera */ brightness(0.5);
-}
+} */
 
  .letras_mas_grandes{
 	 font-size:22px;
@@ -518,11 +517,11 @@ border-color: #CCCCCC #666666 #666666 #CCCCCC /*Creamos un marco para acentuar e
 
  }
 
- .hr_abajo{
+ /* .hr_abajo{
 
 
 
- }
+ } */
 
  .myButton {
 	-moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
