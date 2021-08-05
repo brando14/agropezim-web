@@ -9,7 +9,7 @@ body {
 .home {
   /*  background:rgb(0,132,202); */
   /*background: url(../images/cuadro_fondo2.jpg);*/
-  background: #00353e;
+  background: white;
   background-repeat: repeat;
   padding: 0;
   font-family: sans-serif;
@@ -37,13 +37,13 @@ body {
 #logo {
   margin-top: 0px;
   height: auto;
-  width: 18vw;
+  width: 50%;
 }
 
 /* Tamaño de iconos*/
 
 .hidden-xs {
-  width: 5vw;
+  width: 4vw;
 }
 
 
@@ -61,9 +61,8 @@ nav {
   height: 120px;
 }
 
-
 .items {
-  height: 110px;
+  height: 100px;
   padding-bottom: 0px;
 }
 
@@ -111,7 +110,7 @@ nav {
   padding-right: 0px;
   margin-bottom: 0px;
   position: relative;
-  height: 1000px;
+  height: 120px;
   width: 100%;
   /* min-height: calc(100vh - 112px); */
   /* height: 100%; */
@@ -172,8 +171,8 @@ nav {
   padding-right: 0px;
   margin-bottom: 0px;
   position: relative;
-  height: 1000px;
-  width: 100%;
+  height: 120px;
+  width: auto;
   /* min-height: calc(100vh - 112px); */
   /* height: 100%; */
   /* min-height: calc(100vh - 400px); */
@@ -219,7 +218,12 @@ width: auto;
 }
 
 .myButton {
-  width: 70%;
+  width: 25%;
+  margin-bottom: 40px;
+  top: 50%;
+  left: 50%;
+
+
 }
 
 #mensaje {
@@ -235,7 +239,7 @@ width: auto;
 .linea_divisora {
     border-color: rgb(0, 80, 94); 
     background-color:rgb(0, 80, 94);
-    height: 5px;
+    height: 2px;
     margin-bottom: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -250,10 +254,7 @@ width: auto;
 
 #navbarSupportedContent {
   justify-content: flex-end;
-  position: relative;
-  z-index: 999;
 }
-
 
 /* Base del template */
 
@@ -374,14 +375,14 @@ footer{
   font-size: 18px;
   text-align: center;
   color:rgb(0,53,62);
- 	text-decoration:none;
+  text-decoration:none;
 }
 
 
 /* seccion servicios */
 
 .color_letras_servicios2 {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   color: rgb(0,53,62);
   background-color:rgb(255,255,255);
   text-decoration:none;
@@ -415,7 +416,8 @@ footer{
 
 
 .serviciosAgropezim{
-  margin-left:1%;
+  margin-top: 30px;
+  margin-left:5%;
   margin-right:5%;
 }
 
@@ -452,7 +454,7 @@ height:203px;
 
 /* seccion contacto */
 
-myButton {
+.myButton {
   -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
   -webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
   box-shadow: 0px 1px 0px 0px #f0f7fa;
@@ -474,10 +476,11 @@ myButton {
   font-family:Arial;
   font-size:15px;
   font-weight:bold;
-  padding:15px 20px;
+  padding: 10px 10px;
   text-decoration:none;
-  text-shadow:0px -1px 0px #5b6178;
+  text-shadow:0px 0px 0px #5b6178;
   height: 60px;
+  padding-top: 10px;
 }
 
 .myButton:hover {
@@ -493,16 +496,16 @@ myButton {
 
 .myButton:active {
   position:relative;
-  top:1px;
 }
 
 
 label {
-  display:block;
+  display:none;
   margin-top: 0px;
   letter-spacing:1px;
   width: 70%;
   padding-left: 0;
+  color: #000;
 }
 
 .formulario	 {
@@ -524,7 +527,7 @@ label {
 
 form {
   /* margin:0 auto; */
-  width: auto;
+  width: 100%;
   height: 900px;
   padding-left: 30px;
   position: relative;
@@ -560,11 +563,10 @@ textarea {
 /*responsividad mayor que */
 @media (min-width: 1200px) {
 
-  .hidden-xs {
-    width: 60px;
-    height: 60px;
-    display: block;
-  }
+.hidden-xs {
+  width: 65px;
+  height: 65px;
+}
 
 .visible-xs {                 /* imagenesde productos  */
   display: none;              /*Para una altura minima de 1200px */
@@ -615,17 +617,16 @@ a {
 
 @media (max-width: 1200px) {
 
-  .hidden-xs {
-    width: 60px;
-    height: 60px;
-    display: block;
-    z-index: 999;
+  .linea_divisora{
+    margin-top: 0px;
+    width: 100%;
   }
 
-
-  .visible-xs {
-    display: none;
-  }
+.hidden-xs {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
 
   .img-responsive{
     width: 22,7vw;
@@ -634,11 +635,6 @@ a {
     object-fit: scale-down;
     padding: 0px;
 
-  }
-
-  .linea_divisora {
-    margin-top: 0px;
-    width: 100%;
   }
 
   .viewport {
@@ -683,28 +679,28 @@ a {
     margin: auto;
     }
 
-    .navbar-nav {
+    /* .navbar-nav {
       height: 750px;
       width: 300PX;
       position: relative;
-      z-index: 920
+      z-index: 0;
       
       
-    }
+    } */
     
-    #cabecera-productos {
+    /* #cabecera-productos {
       height: 1400px;      
-    }  
+    }   */
 
   }
 
 
 @media (max-width: 1000px) {
 
-  .hidden-xs {
+  /* .hidden-xs {
     display: block;
 
-  }
+  } */
 
   .letras_mas_grandes{
     font-size: 2.5vw;
@@ -728,9 +724,9 @@ a {
 
 @media (max-width: 900px) {
 
-  .hidden-xs {
+  /* .hidden-xs {
     display: block;
-  }
+  } */
 
   .visible-xs {
     display: none;
@@ -771,7 +767,9 @@ a {
   }
 
   .hidden-xs {
-    display: none;
+    width: 40px;
+    height: 40px;
+    display: block;
   }
   
   .items {
@@ -843,9 +841,9 @@ a {
     width: 190px;
   }
   
-  #cabecera-productos {
-    height: 2600px;      
-  }
+  /* #cabecera-productos {
+    height: 120px;      
+  } */
 }
 
 @media (max-width: 576px) {
@@ -901,17 +899,5 @@ a {
     .color_letras_servicios{
       font-size: 3vw;
     }
-
-    .linea_divisora {
-      /*border-color: rgb(255,121,0);*/
-      border-color: rgb(0,53,62);
-      background-color:rgb(0,53,62);
-      /*background-color:rgb(255,121,0);*/
-      height: 3px;
-      margin-bottom: 0px;
-      padding-bottom: 0px;
-      padding-top: 0px;
-      position: absolute;
-  }
   
 }

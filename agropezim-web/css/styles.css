@@ -64,15 +64,6 @@ nav {
 
 
 
-/* Para que los items del navbar se muestren a la izquierda de la pantalla */
-
-#navbarSupportedContent {
-    justify-content: flex-end;
-
-}
-
-
-
 /* base del template */
 
 .base {
@@ -175,9 +166,6 @@ nav {
     text-decoration: none;
 
 }
-
-
-
 
 
 
@@ -501,10 +489,10 @@ a {
 
 
 
-  {
+  /* {
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
 
 
   .letras_mas_grandes{
@@ -532,7 +520,7 @@ a {
 @media (max-width: 992px) {
 
   .hidden-xs {
-    display: none;
+    display: block;
 
   }
 
@@ -545,7 +533,7 @@ a {
 
 
 
-@media (max-width: 768px;) {
+@media (max-width: 768px) {
 
 
   .base {
@@ -556,7 +544,7 @@ a {
 
 
 
-  }
+}
 
 
 @media (max-width: 576px) {
@@ -595,7 +583,6 @@ a {
 
     font-size: 1.5vw;
 
-
   }
 
 
@@ -606,9 +593,6 @@ a {
 
   }
 
-
-
-
-
+}
 
 }

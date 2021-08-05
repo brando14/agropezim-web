@@ -163,10 +163,11 @@ footer {
     margin-top: 0px;
   }
 
-  .navbar-collapse{
+  /* .navbar-collapse{
 
 
-  }
+  } */
+  
 }
 /*responsividad menor que */
 @media (max-width: 500px) {
