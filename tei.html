@@ -55,7 +55,7 @@
   <body class="home">
     <nav class="navbar container-fluid navbar-expand-md navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/logo_agropezim.png" alt="" id="logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="imagenes/Tei_seleccionado_28.06.21_-_más_más_pqño_-.png" alt="" id="logo-tei"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -152,6 +152,10 @@
 
       <div class="linea_divisora"></div>
 
+      <img src="imagenes/tei7.png" style="width:100%; padding: 20px;">
+
+      <div class="linea_divisora"></div>
+
       <!-- <div class="fondo_imagen_central">
       <div class="panel-body">
       <div class="camera_wrap camera_azure_skin"  id="camera_wrap_1">
@@ -179,178 +183,6 @@
     </footer>
     
     <script>
-
-    var globalTimers=false;
-      $(document).ready(function(){
-
-      reinicioForzadoIconos();
-
-        $(".btn_nosotros").click(function(){
-            nosotros();
-        });
-
-        $(".btn_contacto").click(function(){
-            contacto();
-        });
-
-        $(".btn_clientes").click(function(){
-            clientes();
-        });
-
-        $(".btn_servicios").click(function(){
-            servicios();
-        });
-
-        $(".btn_productos").click(function(){
-            productos();
-        });
-
-        $(".btn_noticias").click(function(){
-          noticias();
-        });
-
-        });
-
-    function nosotros(){
-
-      location.href="nosotros.html";
-
-        //     hidehome(function(){
-        //
-        // location.href="nosotros.html"
-        //     });
-
-    }
-
-    function contacto(){
-
-      location.href="contactos.html";
-
-        //     hidehome(function(){
-        //
-        // location.href="contactos.html";
-        //     });
-
-    }
-
-    function clientes(){
-
-      location.href="clientes.html";
-        //     hidehome(function(){
-        //
-        // location.href="clientes.html"
-        //     });
-        //
-    }
-
-    function servicios(){
-
-      location.href="servicios.html";
-
-
-        //     hidehome(function(){
-        //
-        // location.href="servicios.html";
-        //     });
-
-    }
-
-    function productos(){
-
-      location.href="productos.html";
-
-
-        //     hidehome(function(){
-        //
-        // location.href="productos.html";
-        //
-        //     });
-
-    }
-
-    function noticias(){
-
-      location.href="noticias.html"
-
-        //     hidehome(function(){
-        //
-        // location.href="noticias.html"
-        //     });
-
-      }
-
-    // animación de todos los iconos excepto el logo de agropezim
-    // function hidehome(action){
-    //
-    //         $(".btn_clientes").animate({height: 94,width: 1},1500,function(){$(".btn_clientes").css("visibility", "hidden");});
-    //         $(".btn_productos").animate({height: 1,width: 94},1000,function(){$(".btn_productos").css("visibility", "hidden");});
-    //         $(".btn_servicios").animate({height: 94,width: 1},1500,function(){$(".btn_servicios").css("visibility", "hidden");});
-    //         $(".btn_nosotros").animate({height: 1,width: 94,top:0},1000,function(){$(".btn_nosotros").css("visibility", "hidden");});
-    //         $(".btn_noticias").animate({height: 1,width: 94},1500,function(){$(".btn_noticias").css("visibility", "hidden");});
-    //         $(".btn_contacto").animate({height: 94,width: 1},1600, function(){$(".btn_contacto").css("visibility", "hidden");
-    // 		 //dejar visible todo otra vez antes de irme a la otra pagina
-    // 		 //showhome();
-    // 		 globalTimers=true;
-    //              action();
-    //
-    //         });
-    //     }
-    // function showhome( ){
-    //
-    //         $(".btn_clientes").animate({height: 94,width: 94},900,function(){$(".btn_clientes").css("visibility", "visible");});
-    //         $(".btn_productos").animate({height: 94/*,width: 0*/},800,function(){$(".btn_productos").css("visibility", "visible");});
-    //         $(".btn_servicios").animate({/*height: 0,*/width: 94},500,function(){$(".btn_servicios").css("visibility", "visible");});
-    //         $(".btn_nosotros").animate({height: 94/*,width: 0*/},700,function(){$(".btn_nosotros").css("visibility", "visible");});
-    //         $(".btn_contacto").animate({height: 94,width: 94},1000, function(){ $(".btn_contacto").css("visibility", "visible");
-    //
-    //
-    // 		 globalTimers=false;
-    //         });
-    //     }
-
-    function estirarContainer(){
-    }
-
-    function girarProductos(){
-
-      $("#slider1").tinycarousel({ interval: true,animationTime: 1000,intervalTime: 3000 });
-      var slider1 = $("#slider1").data("plugin_tinycarousel");
-
-      $('#slider1').tinycarousel();
-      slider1.start();
-    }
-
-    jQuery(function(){
-      jQuery('#camera_wrap_1').camera({ //here I declared some settings, the height and the presence of the thumbnails
-        height: '45%',
-        navigationHover: true,
-        playPause: false,
-        pauseOnClick: false,
-        navigation: false,
-        fx   : 'scrollLeft',
-        transPeriod: 1500,
-        time: 5000,
-        portrait: false,
-        pagination: false,
-        thumbnails: false
-        });
-  },
-
-    girarProductos()
-    );
-
-    // animación del logo agropezim
-    // $(".header").animate({width: 350}, 1000);
-
-    timer = setTimeout('temporizador()', 700);
-    function temporizador() {
-      if(globalTimers){
-        showhome( );
-      globalTimers=false;
-       }
-
-      timer = setTimeout('temporizador()', 700);
-    }
     </script>
 
   </body>

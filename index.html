@@ -128,8 +128,8 @@
 
             <li class="nav-item">
               <a class="nav-link" href="tei.html">
-                <img src="imagenes/productos/tei.jpg" class="hidden-xs btn_servicios">
-                <label class="visible-xs" align-content="center" onclick="location.href='servicios.html';">
+                <img src="imagenes/Tei_seleccionado_28.06.21_-_más_más_pqño_-.png" class="hidden-xs btn_tei">
+                <label class="visible-xs" align-content="center" onclick="location.href='tei.html';">
                   <h2><span class="label label-default">TEI</span></h2>
                 </label>
               </a>
@@ -144,21 +144,21 @@
           
       <div class="linea_divisora"></div>
 
-      <img class="imagen1" src="imagenes/tei6.png" style="width:100%; padding: 20px;">
+      <img class="imagen1" id= "info" src="imagenes/tei6.png" style="width:100%;">
 
       <div class="linea_divisora"></div>
 
-      <img src="imagenes/Imagen_2_DEF_-_amarillo_-.jpg" style="width:100%; padding: 20px;">
+      <img class="imagen1" id= "info" src="imagenes/Imagen_2_DEF_-_amarillo_-.jpg" style="width:100%;">
           
       <div class="linea_divisora"></div>
           
-      <img src="imagenes/cortada.png" style="width:100%; padding: 20px;">
+      <img class="imagen1" id= "info" src="imagenes/cortada.png" style="width:100%;">
 
       <div class="linea_divisora"></div>
       
-      <img src="imagenes/tei5.png" style="width:100%; padding: 20px;">
+      <img class="imagen1" id= "info" src="imagenes/tei7.png" style="width:100%;">
 
-      <div class="linea_divisora"></div>
+      <!-- <div class="linea_divisora"></div> -->
 
       <!-- <div class="fondo_imagen_central">
       <div class="panel-body">
@@ -222,10 +222,10 @@
 
       location.href="nosotros.html";
 
-        //     hidehome(function(){
-        //
-        // location.href="nosotros.html"
-        //     });
+            hidehome(function(){
+        
+        location.href="nosotros.html"
+            });
 
     }
 
@@ -233,21 +233,21 @@
 
       location.href="contactos.html";
 
-        //     hidehome(function(){
-        //
-        // location.href="contactos.html";
-        //     });
+            hidehome(function(){
+        
+        location.href="contactos.html";
+            });
 
     }
 
     function clientes(){
 
       location.href="clientes.html";
-        //     hidehome(function(){
-        //
-        // location.href="clientes.html"
-        //     });
-        //
+            hidehome(function(){
+        
+        location.href="clientes.html"
+            });
+        
     }
 
     function servicios(){
@@ -255,10 +255,10 @@
       location.href="servicios.html";
 
 
-        //     hidehome(function(){
-        //
-        // location.href="servicios.html";
-        //     });
+            hidehome(function(){
+        
+        location.href="servicios.html";
+            });
 
     }
 
@@ -267,11 +267,11 @@
       location.href="productos.html";
 
 
-        //     hidehome(function(){
-        //
-        // location.href="productos.html";
-        //
-        //     });
+            hidehome(function(){
+        
+        location.href="productos.html";
+        
+            });
 
     }
 
@@ -279,29 +279,29 @@
 
       location.href="noticias.html"
 
-        //     hidehome(function(){
-        //
-        // location.href="noticias.html"
-        //     });
+            hidehome(function(){
+        
+        location.href="noticias.html"
+            });
 
       }
 
     // animación de todos los iconos excepto el logo de agropezim
     // function hidehome(action){
-    //
-    //         $(".btn_clientes").animate({height: 94,width: 1},1500,function(){$(".btn_clientes").css("visibility", "hidden");});
-    //         $(".btn_productos").animate({height: 1,width: 94},1000,function(){$(".btn_productos").css("visibility", "hidden");});
-    //         $(".btn_servicios").animate({height: 94,width: 1},1500,function(){$(".btn_servicios").css("visibility", "hidden");});
-    //         $(".btn_nosotros").animate({height: 1,width: 94,top:0},1000,function(){$(".btn_nosotros").css("visibility", "hidden");});
-    //         $(".btn_noticias").animate({height: 1,width: 94},1500,function(){$(".btn_noticias").css("visibility", "hidden");});
-    //         $(".btn_contacto").animate({height: 94,width: 1},1600, function(){$(".btn_contacto").css("visibility", "hidden");
-    // 		 //dejar visible todo otra vez antes de irme a la otra pagina
-    // 		 //showhome();
-    // 		 globalTimers=true;
-    //              action();
-    //
-    //         });
-    //     }
+    //   $(".btn_clientes").animate({height: 94,width: 1},1500,function(){$(".btn_clientes").css("visibility", "hidden");});
+    //   $(".btn_productos").animate({height: 1,width: 94},1000,function(){$(".btn_productos").css("visibility", "hidden");});
+    //   $(".btn_servicios").animate({height: 94,width: 1},1500,function(){$(".btn_servicios").css("visibility", "hidden");});
+    //   $(".btn_nosotros").animate({height: 1,width: 94,top:0},1000,function(){$(".btn_nosotros").css("visibility", "hidden");});
+    //   $(".btn_noticias").animate({height: 1,width: 94},1500,function(){$(".btn_noticias").css("visibility", "hidden");});
+    //   $(".btn_contacto").animate({height: 94,width: 1},1600, function(){$(".btn_contacto").css("visibility", "hidden");
+    		 //dejar visible todo otra vez antes de irme a la otra pagina
+    		// showhome();
+    		//   globalTimers=true;
+        //   action();
+    
+        //     });
+        // }
+
     // function showhome( ){
     //
     //         $(".btn_clientes").animate({height: 94,width: 94},900,function(){$(".btn_clientes").css("visibility", "visible");});
@@ -354,7 +354,7 @@
       if(globalTimers){
         showhome( );
       globalTimers=false;
-       }
+      }
 
       timer = setTimeout('temporizador()', 700);
     }
