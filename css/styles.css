@@ -167,6 +167,10 @@ nav {
   height: 800px;
 }
 
+.h1 {
+  color:rgb(0, 80, 94)
+}
+
 
 #containerCentral {
   /* background-color:rgb(110,150,178);  */
@@ -243,13 +247,33 @@ width: auto;
 /* Linea divisiora */
 
 .linea_divisora {
-    border-color: rgb(0, 80, 94); 
-    background-color:rgb(0, 80, 94);
-    height: 2px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    position: absolute;
+  border-color: rgb(0, 80, 94); 
+  background-color:rgb(0, 80, 94);
+  height: 2px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
+}
+
+.linea_divisora2 {
+  border-color: yellow; 
+  background-color: yellow;
+  height: 2px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
+}
+
+.linea_divisora3 {
+  border-color: rgb(5, 113, 146); 
+  background-color: rgb(5, 113, 146);
+  height: 2px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
 }
 
 #logo-movil {
