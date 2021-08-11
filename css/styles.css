@@ -69,13 +69,23 @@ nav {
   height: 120px;
 }
 
+.nav-item {
+  justify-content: flex-start;
+}
+
 .items {
   height: 100px;
   padding-bottom: 0px;
 }
 
+
 .imagen1 {
   padding: 70px;
+}
+
+.navbar-toggler {
+  border-color: black;
+  border: solid;
 }
 
 #cabecera {
@@ -621,7 +631,7 @@ textarea {
 }
 
 .visible-xs {                 /* imagenesde productos  */
-  display: none;              /*Para una altura minima de 1200px */
+  display: none;            /*Para una altura minima de 1200px */
 }
 
   .linea_divisora{
@@ -730,8 +740,8 @@ a {
     .navbar-nav {
       position: relative;
       z-index: 10000;
-      
-      
+      background-color: white;
+
     }
     
     /* #cabecera-productos {
@@ -947,6 +957,7 @@ a {
       font-size: 3vw;
     }
 
+}
 
 @media (max-width:400px) {     /*======= Menos de 400 px =======*/
   
@@ -965,4 +976,4 @@ a {
     width: 150px;
   }
 }
-}
+
