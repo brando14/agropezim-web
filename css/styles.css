@@ -181,6 +181,13 @@ nav {
   color:rgb(0, 80, 94)
 }
 
+#TEI {
+color: rgb(0, 80, 94);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-transform: uppercase;
+text-size-adjust: 
+}
+
 
 #containerCentral {
   /* background-color:rgb(110,150,178);  */
@@ -250,6 +257,7 @@ width: auto;
   padding-bottom: 20px;
 }
 
+
 /* -------------Formulario----------------- */
 
 
@@ -266,24 +274,34 @@ width: auto;
   position: absolute;
 }
 
-.linea_divisora2 {
+.linea_divisora1 {
   border-color: yellow; 
   background-color: yellow;
-  height: 2px;
+  height: 7px;
   margin-bottom: 0px;
   padding-bottom: 0px;
   padding-top: 0px;
-  position: absolute;
+  position: relative;
+}
+
+.linea_divisora2 {
+  border-color: rgb(0, 80, 94); 
+  background-color: rgb(0, 80, 94);
+  height: 7px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: relative;
 }
 
 .linea_divisora3 {
-  border-color: rgb(5, 113, 146); 
-  background-color: rgb(5, 113, 146);
-  height: 2px;
+  border-color: rgb(4, 147, 190); 
+  background-color: rgb(4, 147, 190);
+  height: 7px;
   margin-bottom: 0px;
   padding-bottom: 0px;
   padding-top: 0px;
-  position: absolute;
+  position: relative;
 }
 
 #logo-movil {
