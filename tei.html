@@ -56,10 +56,11 @@
   <body class="home">
     <nav class="navbar container-fluid navbar-expand-md navbar-light">
       <div class="container-fluid">
-        <a><img src="imagenes/logos/logoTeitrasparente.png" id="logo1"></a>
+        <a href="index.html"><img src="imagenes/logos/logoTeitrasparente.png" id="logo1"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
 
@@ -120,13 +121,13 @@
       <h1 style="color: rgb(0, 77, 93);">Inicio de Sesión</h1>
     </hgroup>
     
-    <div>
+    <!-- <div>
       <a href="docs/flyer.png" download="TEI:pg">
         <img class="imagen-login" src="imagenes/infografias/TEI-login.jpg" style="width:35%;">
       </a>
-    </div>
+    </div> -->
 
-    <form>
+    <form class="login">
       <div class="group">
         <input type="text"><span class="highlight"></span><span class="bar"></span>
         <label>Usuario</label>
@@ -140,10 +141,14 @@
         <label>Contraseña</label>
       </div>
       <button type="button" class="button buttonBlue">Iniciar Sesión
-        <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        <div class="ripples buttonRipples">
+          <span class="ripplesCircle">
+            <a class="nav-link active" aria-current="page" href="control.html"></a>
+          </span>
+        </div>
       </button>
 
-      <a href="docs/Flyer.pdf" download="TEI.pdf"> Saber más de TEI</a>
+      <a href="docs/flyer.pdf" download="TEI.pdf"> Saber más de TEI</a>
     </form>
 
     <footer class="bg-light text-center text-md-start">
@@ -154,7 +159,7 @@
     </footer>
     
     <script>
-      $(window, document, undefined).ready(function() {
+$(window, document, undefined).ready(function() {
 
 $('input').blur(function() {
   var $this = $(this);

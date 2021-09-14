@@ -113,33 +113,34 @@
     </div>
 
     <div class="linea_divisora"></div>
-      
-    <!-- Formulario -->
-    <div class="container formulario">
-      <form class="" action="index.html" method="post">
-        <div class="mb-3"><br>
-          <label for="nombre">Nombre:</label>
-          <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="">
-        </div><br>
-        <div class="mb-3">
-          <label for="phone">Telefono:</label><br>
-          <input id="phone" type="text" name="phone" placeholder="ejemplo 04241234567" required="">
-        </div><br>
-        <div class="mb-3">
-          <label for="email">Email:</label><br>
-          <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
-        </div><br>
-        <div class="mb-3">
-          <label for="mensaje">Mensaje:</label><br>
-          <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
-        </div>
-      </form>
-    </div>
+    <hgroup>
+      <h1 style="color: rgb(0, 77, 93);">Contactanos</h1>
+    </hgroup>
     
+    <form class="login">
+      <div class="group">
+        <input type="text"><span class="highlight"></span><span class="bar"></span>
+        <label>Nombre</label>
+      </div>
+      <div class="group">
+        <input type="email"><span class="highlight"></span><span class="bar"></span>
+        <label>Correo Eléctrinico</label>
+      </div>
+      <div class="group">
+        <textarea class="form-control"></textarea>
+        <label>Comentario</label>
+      </div>
+      
+      <button type="button" class="button buttonBlue">Contactanos
+        <div class="ripples buttonRipples">
+          <span class="ripplesCircle">
+            <a class="nav-link active" aria-current="page" href="control.html"></a>
+          </span>
+        </div>
+      </button>
 
-    <div class="container-fluid">
-      <input type="submit" value="Enviar Solicitud" class="myButton"> 
-    </div>
+      <a href="docs/flyer.pdf" download="TEI.pdf"> Saber más de TEI</a>
+    </form>
 
     <footer class="bg-light text-center text-md-start">
       <div class="text-center p-3 base">

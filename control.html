@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <!-- agregado el meta charset UTF-8 para los carácteres como las tildes y la letra ñ -->
@@ -40,8 +41,6 @@
     <!-- mover carrusel desde JavaScript -->
     <script src="js/jquery.tinycarousel.min.js"></script>
 
-    <link  rel="icon"   href="images/nosotros.jpg" type="image/png" />
-
 
     <!-- para las animaciones -->
     <!-- -->
@@ -55,18 +54,16 @@
     <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 </head>
   <body class="home">
-    
     <nav class="navbar container-fluid navbar-expand-md navbar-light">
       <div class="container-fluid">
-        
-        <a><img src="images/logo_agropezim.png" id="logo"></a>
+        <a href="index.html"><img src="imagenes/logos/logoTeitrasparente.png" id="logo1"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+          <span class="navbar-toggler-icon"></span>
+          </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            
+
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="nosotros.html">
                 <img src="images/nosotros.jpg" class="hidden-xs btn_nosotros">
@@ -103,186 +100,100 @@
               </a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="tei.html">
-                <img src="imagenes/iconos/teiLogin.png" class="hidden-xs btn_tei">
-                <label class="visible-xs" align-content="center" onclick="location.href='tei.html';">
-                  <h2><span class="label label-default">TEI</span></h2>
-                </label>
-              </a>
-            </li>
-
+            
           </ul>
         </div>
       </div>
     </nav>
-    <div class="linea_divisora"></div>
 
-    <!-- Imagenes de presentación -->
     <div class="container-fluid" id="cabecera">
-          
-      <div class="linea_divisora"></div>
-
-      <img class="imagen1" id= "info" src="imagenes/infografias/TEI2.png" style="width:100%;">
-
-      <div class="linea_divisora"></div>
-
-      <img class="imagen1" id= "info" src="imagenes/infografias/cortada.png" style="width:100%;">
-          
-      <div class="linea_divisora"></div>
-
-      <img class="imagen1" id= "info" src="imagenes/infografias/front_2a-01-02.jpg" style="width:100%;">
-          
-      <div class="linea_divisora"></div>
-          
       
+      <div class="linea_divisora1"></div>
+
+      <div class="linea_divisora2"></div>
+      
+      <div class="linea_divisora3"></div>
+      
+    </div>
+    
+    <hgroup>
+      <h1 style="color: rgb(0, 77, 93);">Tablero Virtual</h1>
+    </hgroup>
+    
+    <!-- First Grid -->
+    <!-- <div class="w3-light-grey w3-container">
+        <div class="w3-content">
+          <div class="w3-third w3-center">
+            <br>
+          </div>
+  
+          <div class="w3-twothird">
+            <h2> Try on/off switching!</h2>
+            
+            <input type="image" alt="ON" src="https://cdn.pixabay.com/photo/2016/06/01/07/41/green-1428507_960_720.png"
+              width="50px" height="50px" onclick="invokeON()"></input>
+  
+            <input type="image" alt="OFF" src="https://cdn.picpng.com/button/red-button-button-icon-back-web-56577.png"
+              width="150" height="150" onclick="invokeOFF()"></input>
+  
+            <input id="scanData" type="button" value="Update" onclick="updateImage();"/>
+  
+            <div>
+              <input type="image" id="img" src="./images/off.png"
+                width="150" height="150"></input>
+            </div>
+  
+          </div>
+        </div>
+      </div> -->
+  
+      <!-- <div class="w3-container w3-black w3-center w3-opacity w3-padding-8">
+          <h1 class="w3-margin w3-xlarge">Keep working!</h1>
+      </div> -->
+
     <footer class="bg-light text-center text-md-start">
       <div class="text-center p-3 base">
-        Agropezim Group C.A. RIF: J-404095969 Venezuela, <br> San Felipe - Estado Yaracuy. Todos los Derechos Reservados 2014.
+        Agropezim Group C.A. RIF: J-404095969 Venezuela, <br> 
+        San Felipe - Estado Yaracuy. Todos los Derechos Reservados 2014.
       </div>
     </footer>
     
     <script>
+$(window, document, undefined).ready(function() {
 
-    var globalTimers=false;
-      $(document).ready(function(){
+$('input').blur(function() {
+  var $this = $(this);
+  if ($this.val())
+    $this.addClass('used');
+  else
+    $this.removeClass('used');
+});
 
-      reinicioForzadoIconos();
+var $ripples = $('.ripples');
 
-        $(".btn_nosotros").click(function(){
-            nosotros();
-        });
+$ripples.on('click.Ripples', function(e) {
 
-        $(".btn_contacto").click(function(){
-            contacto();
-        });
+  var $this = $(this);
+  var $offset = $this.parent().offset();
+  var $circle = $this.find('.ripplesCircle');
 
-        $(".btn_clientes").click(function(){
-            clientes();
-        });
+  var x = e.pageX - $offset.left;
+  var y = e.pageY - $offset.top;
 
-        $(".btn_servicios").click(function(){
-            servicios();
-        });
+  $circle.css({
+    top: y + 'px',
+    left: x + 'px'
+  });
 
-        $(".btn_productos").click(function(){
-            productos();
-        });
+  $this.addClass('is-active');
 
-        $(".btn_noticias").click(function(){
-          noticias();
-        });
+});
 
-        });
+$ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
+  $(this).removeClass('is-active');
+});
 
-    function nosotros(){
-
-      location.href="nosotros.html";
-
-            hidehome(function(){
-        
-        location.href="nosotros.html"
-            });
-
-    }
-
-    function contacto(){
-
-      location.href="contactos.html";
-
-            hidehome(function(){
-        
-        location.href="contactos.html";
-            });
-
-    }
-
-    function clientes(){
-
-      location.href="clientes.html";
-            hidehome(function(){
-        
-        location.href="clientes.html"
-            });
-        
-    }
-
-    function servicios(){
-
-      location.href="servicios.html";
-
-
-            hidehome(function(){
-        
-        location.href="servicios.html";
-            });
-
-    }
-
-    function productos(){
-
-      location.href="productos.html";
-
-
-            hidehome(function(){
-        
-        location.href="productos.html";
-        
-            });
-
-    }
-
-    function noticias(){
-
-      location.href="noticias.html"
-
-            hidehome(function(){
-        
-        location.href="noticias.html"
-            });
-
-      }
-
-    function estirarContainer(){
-    }
-
-    function girarProductos(){
-
-      $("#slider1").tinycarousel({ interval: true,animationTime: 1000,intervalTime: 3000 });
-      var slider1 = $("#slider1").data("plugin_tinycarousel");
-
-      $('#slider1').tinycarousel();
-      slider1.start();
-    }
-
-    jQuery(function(){
-      jQuery('#camera_wrap_1').camera({ //here I declared some settings, the height and the presence of the thumbnails
-        height: '45%',
-        navigationHover: true,
-        playPause: false,
-        pauseOnClick: false,
-        navigation: false,
-        fx   : 'scrollLeft',
-        transPeriod: 1500,
-        time: 5000,
-        portrait: false,
-        pagination: false,
-        thumbnails: false
-        });
-  },
-
-    girarProductos()
-    );
-
-    timer = setTimeout('temporizador()', 700);
-    function temporizador() {
-      if(globalTimers){
-        showhome( );
-      globalTimers=false;
-      }
-
-      timer = setTimeout('temporizador()', 700);
-    }
+});
     </script>
 
   </body>
