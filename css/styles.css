@@ -200,7 +200,8 @@ nav {
 }
 
 .h1 {
-  color:rgb(0, 80, 94)
+  color:rgb(0, 80, 94);
+  font-size: medium;
 }
 
 #TEI {
@@ -437,6 +438,15 @@ footer{
 
 }
 
+.card-text {
+  text-align: justify;
+}
+
+.card-title {
+  color: rgb(0, 77, 93);
+  font-weight: bold;
+
+}
 .card-body-productos {
   color: rgb(0, 80, 94);
   position:relative;
@@ -601,6 +611,10 @@ height:203px;
 }
 
 /* seccion contacto */
+
+.ocultarMail {
+  opacity: 0;
+}
 
 .myButton {
   -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
@@ -1084,6 +1098,16 @@ a {
     }   */
 
   }
+
+
+  @media (min-width: 1150px) {
+    .imagenproductos {
+      position:relative;
+      display: block;
+      height: 480px;
+      width: 400px;
+    }
+  } 
 
 
 @media (max-width: 1000px) {
