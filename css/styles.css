@@ -440,9 +440,10 @@ footer{
 
 /* ===================== Productos ===================== */
 
-/* .card {
-  width: 280px; height: 500px;
-} */
+.card {
+  width: 280px; 
+  height: 200px;
+}
 
 #productos{
   justify-content: center;
@@ -1054,7 +1055,7 @@ a {
   padding-bottom: 0px;
 }
 
-                                        /*Responsividad menor que */
+/*Responsividad menor que */
 
 @media (max-width: 1200px) {
 
@@ -1368,4 +1369,3 @@ a {
     width: 150px;
   }
 }
-
