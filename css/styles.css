@@ -87,16 +87,20 @@ body {
 
 
 .imagen1 {
-  padding: 120px;
-  
+  padding: 150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .imagenproductos {
   position:relative;
   display: block;
   margin: auto;
+  margin-bottom: -65px;
+  margin-top: 0px;
   height: 60%;
-  width: 50%;
+  width: 40%;
+  padding: 0px;
 }
 
 .imagen-login {
@@ -440,10 +444,7 @@ footer{
 
 /* ===================== Productos ===================== */
 
-.card {
-  width: 280px; 
-  height: 200px;
-}
+
 
 #productos{
   justify-content: center;
@@ -479,12 +480,17 @@ footer{
   border-right-style: none;
   border-bottom-style: none;
   border-left-style: none;
-  height: 100%;
-  width: 70%;
+  height: 70%;
+  width: 80%;
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
+
+/* .card {
+  width: 260px; 
+  height: 180px;
+} */
 
 .cardproduct {
   float:left;margin-left:5px;
@@ -512,7 +518,7 @@ footer{
 }
 
 .login {
-  width: 70%;
+  width: 50%;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -557,6 +563,9 @@ footer{
   position: relative;
   align-items: center;
   margin: 3%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .color_letras_servicios2 {
@@ -1059,6 +1068,13 @@ a {
 
 @media (max-width: 1200px) {
 
+  .login {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
   .linea_divisora{
     margin-top: 0px;
     width: 100%;
@@ -1146,6 +1162,14 @@ a {
 
 @media (max-width: 1000px) {
 
+  .imagenproductos {
+    position:relative;
+    display: block;
+    margin: auto;
+    height: 60%;
+    width: 50%;
+  }
+
   /* .hidden-xs {
     display: block;
 
@@ -1221,6 +1245,14 @@ a {
     position: relative;
   }
 
+  .imagenproductos {
+    position:relative;
+    display: block;
+    margin: auto;
+    height: 60%;
+    width: 60%;
+  }
+
   .hidden-xs {
     width: 30px;
     height: 30px;
@@ -1293,6 +1325,13 @@ a {
     height: 70px;
     width: 90px;
   }
+
+  .login {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
   
   /* #cabecera-productos {
     height: 120px;      
@@ -1301,6 +1340,12 @@ a {
 
 @media (max-width: 576px) {
 
+  .login {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 
   #boxes .window {
     margin-top: 10;
