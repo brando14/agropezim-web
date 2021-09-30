@@ -40,6 +40,8 @@
     <!-- mover carrusel desde JavaScript -->
     <script src="js/jquery.tinycarousel.min.js"></script>
 
+    <link  rel="icon"   href="images/nosotros.jpg" type="image/png" />
+
 
     <!-- para las animaciones -->
     <!-- -->
@@ -53,24 +55,17 @@
     <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 </head>
   <body class="home">
+    
     <nav class="navbar container-fluid navbar-expand-md navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/logo_agropezim.png" alt="" id="logo"></a>
+        
+        <a><img src="images/logo_agropezim.png" id="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href='http://ubiot-tei.eba-gwtyudam.eu-central-1.elasticbeanstalk.com/'>
-                <img src="images/login.jpg" class="hidden-xs btn_login">
-                  <label class="visible-xs" align-content="center" onclick="location.href='http://ubiot-tei.eba-gwtyudam.eu-central-1.elasticbeanstalk.com/'">
-                    <h2><span class="label label-default">Login</span></h2>
-                  </label>
-              </a>
-            </li>
             
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="nosotros.html">
@@ -80,16 +75,7 @@
                 </label>
               </a>
             </li>
-            <!-- <li class="nav-item">
-
-                  <a class="nav-link" href="#">
-                    <img src="images/clientes.jpg" class="hidden-xs btn_clientes">
-                    <label class="visible-xs" align-content="center" onclick="location.href='clientes.html';">
-                      <h2><span class="label label-default">Clientes</span></h2>
-                    </label>
-                  </a>
-                </li> -->
-                
+            
             <li>
               <a class="nav-link" href="productos.html">
                 <img src="images/productos.jpg" class="hidden-xs btn_productos">
@@ -108,15 +94,6 @@
               </a>
             </li>   
             
-            <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img src="images/noticias.jpg" class="hidden-xs btn_noticias">
-                    <label class="visible-xs" align-content="center" onclick="location.href='noticias.html';">
-                      <h2><span class="label label-default">Noticias</span></h2>
-                    </label>
-                  </a>
-                </li> -->
-
             <li class="nav-item">
               <a class="nav-link" href="contactos.html">
                 <img src="images/contactos.jpg" class="hidden-xs btn_contacto">
@@ -128,8 +105,8 @@
 
             <li class="nav-item">
               <a class="nav-link" href="tei.html">
-                <img src="imagenes/Tei_seleccionado_28.06.21_-_más_más_pqño_-.png" class="hidden-xs btn_tei">
-                <label class="visible-xs" align-content="center" onclick="location.href='tei.html';">
+                <img src="imagenes/logos/teiNew.png" class="hidden-xs btn_tei">
+                <label class="visible-xs" align-content="center" onclick="location.href='';">
                   <h2><span class="label label-default">TEI</span></h2>
                 </label>
               </a>
@@ -140,44 +117,57 @@
       </div>
     </nav>
 
+    <div class="linea_divisora2"></div>
+
+    <!-- Imagenes de presentación -->
     <div class="container-fluid" id="cabecera">
-          
-      <div class="linea_divisora"></div>
-
-      <img class="imagen1" id= "info" src="imagenes/tei6.png" style="width:100%;">
-
-      <div class="linea_divisora"></div>
-
-      <img class="imagen1" id= "info" src="imagenes/Imagen_2_DEF_-_amarillo_-.jpg" style="width:100%;">
-          
-      <div class="linea_divisora"></div>
-          
-      <img class="imagen1" id= "info" src="imagenes/cortada.png" style="width:100%;">
-
-      <div class="linea_divisora"></div>
-      
-      <img class="imagen1" id= "info" src="imagenes/tei7.png" style="width:100%;">
-
-      <!-- <div class="linea_divisora"></div> -->
-
-      <!-- <div class="fondo_imagen_central">
-      <div class="panel-body">
-      <div class="camera_wrap camera_azure_skin"  id="camera_wrap_1">
-        <div data-src="imagenes/Imagen_1DEF.jpg"></div>
-        <div data-src="imagenes/Imagen_2.1_DEF_-_blanco_-.jpg"></div>
-        <div data-src="imagenes/Imagen_3_DEF.jpg"></div>
-        <div data-src="imagenes/Imagen_4_DEF.jpg"></div>
-        <div data-src="imagenes/Imagen_5_TEI_def.jpg"></div>
-        <div data-src="imagenes/Imagen_5.1_TEI_def.jpg"></div>
-        <div data-src="imagenes/Imagen_5.2_TEI_def.jpg"></div>
-        <div data-src="imagenes/Imagen_5.3_TEI_def.jpg"></div>
-        <div data-src="imagenes/Imagen_5.4_TEI_def.jpg"></div>
-        <div data-src="imagenes/Imagen_5.5_TEI_def.jpg"></div>
-        <div data-src="imagenes/Imagen_5.6_TEI_def.jpg"></div>
+      <div style="float: left; width: 50%;">
+        <img class="imagenPresentacionPozos" id= "info" src="imagenes/infografias/cortada.png">
       </div>
+      <div style="padding: 3%; float: right; width: 50%;">
+        <h5>Perforación de pozos profundos</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque reiciendis a doloremque, maxime, quia nostrum sed odit minus natus iste cumque iure eius maiores cum atque voluptas ducimus rem!</p>
+        <a href="productos.html" class="btn btn-primary">Saber más</a>
       </div>
-      </div> -->
-    </div> 
+    </div>
+
+    <div class="linea_divisora2" style="clear: left;"></div>
+
+    <div class="container-fluid" id="cabecera">
+      <div style="float: right; width: 50%;">
+        <img class="imagenPresentacionTei" id= "info" src="imagenes/infografias/Imagen_3_DEF.png">
+      </div>
+      <div style="padding: 3%; float: left; width: 50%;">
+        <h5>Motores y Bombas sumergibles Varuna</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque reiciendis a doloremque, maxime, quia nostrum sed odit minus natus iste cumque iure eius maiores cum atque voluptas ducimus rem!</p>
+        <a href="productos.html" class="btn btn-primary">Saber más</a>
+      </div>
+    </div>
+
+    <div class="linea_divisora2" style="clear: right;"></div>
+
+    <div class="container-fluid" id="cabecera">
+      <div style="float: left; width: 50%;">
+        <img class="imagenPresentacionTei" id= "info" src="imagenes/infografias/Imagen_2.1_DEF.jpg">
+      </div>
+      <div style="padding: 3%; float: right; width: 50%; margin: auto;">
+        <h5>Empalmes Sumergibles GT</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque reiciendis a doloremque, maxime, quia nostrum sed odit minus natus iste cumque iure eius maiores cum atque voluptas ducimus rem!</p>
+        <a href="productos.html" class="btn btn-primary">Saber más</a>
+      </div>
+
+      <div class="linea_divisora2" style="clear: left;"></div>
+
+    <div class="container-fluid" id="cabecera">
+      <div style="float: right; width: 50%;">
+        <img class="imagenPresentacionTei" id= "info" src="imagenes/infografias/TEI.png">
+      </div>
+      <div style="padding: 3%; float: left; width: 50%;">
+        <h5>Tableros Eléctricos Inteligentes</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque reiciendis a doloremque, maxime, quia nostrum sed odit minus natus iste cumque iure eius maiores cum atque voluptas ducimus rem!</p>
+        <a href="productos.html" class="btn btn-primary">Saber más</a>
+      </div>
+    </div>
 
     <footer class="bg-light text-center text-md-start">
       <div class="text-center p-3 base">
@@ -286,35 +276,6 @@
 
       }
 
-    // animación de todos los iconos excepto el logo de agropezim
-    // function hidehome(action){
-    //   $(".btn_clientes").animate({height: 94,width: 1},1500,function(){$(".btn_clientes").css("visibility", "hidden");});
-    //   $(".btn_productos").animate({height: 1,width: 94},1000,function(){$(".btn_productos").css("visibility", "hidden");});
-    //   $(".btn_servicios").animate({height: 94,width: 1},1500,function(){$(".btn_servicios").css("visibility", "hidden");});
-    //   $(".btn_nosotros").animate({height: 1,width: 94,top:0},1000,function(){$(".btn_nosotros").css("visibility", "hidden");});
-    //   $(".btn_noticias").animate({height: 1,width: 94},1500,function(){$(".btn_noticias").css("visibility", "hidden");});
-    //   $(".btn_contacto").animate({height: 94,width: 1},1600, function(){$(".btn_contacto").css("visibility", "hidden");
-    		 //dejar visible todo otra vez antes de irme a la otra pagina
-    		// showhome();
-    		//   globalTimers=true;
-        //   action();
-    
-        //     });
-        // }
-
-    // function showhome( ){
-    //
-    //         $(".btn_clientes").animate({height: 94,width: 94},900,function(){$(".btn_clientes").css("visibility", "visible");});
-    //         $(".btn_productos").animate({height: 94/*,width: 0*/},800,function(){$(".btn_productos").css("visibility", "visible");});
-    //         $(".btn_servicios").animate({/*height: 0,*/width: 94},500,function(){$(".btn_servicios").css("visibility", "visible");});
-    //         $(".btn_nosotros").animate({height: 94/*,width: 0*/},700,function(){$(".btn_nosotros").css("visibility", "visible");});
-    //         $(".btn_contacto").animate({height: 94,width: 94},1000, function(){ $(".btn_contacto").css("visibility", "visible");
-    //
-    //
-    // 		 globalTimers=false;
-    //         });
-    //     }
-
     function estirarContainer(){
     }
 
@@ -345,9 +306,6 @@
 
     girarProductos()
     );
-
-    // animación del logo agropezim
-    // $(".header").animate({width: 350}, 1000);
 
     timer = setTimeout('temporizador()', 700);
     function temporizador() {
