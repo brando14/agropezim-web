@@ -39,6 +39,9 @@ form.addEventListener("submit", (event) => {
       success.style.color = "green";
       success.innerText = "Su Solicitud ha sido enviada!";
       setTimeout(function() {success.innerText = "";}, 3000)
+      name.value = "";
+      email.value = "";
+      message.value = "";
 
     })
     .catch((error) => {
@@ -46,5 +49,8 @@ form.addEventListener("submit", (event) => {
       noSuccess.style.color = "red";
       noSuccess.innerText = "Ha ocurrido un error.";
       setTimeout(function() {noSuccess.innerText = "";}, 3000)
+      name.value = "";
+      email.value = "";
+      message.value = "";
     });
 });
