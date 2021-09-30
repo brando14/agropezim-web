@@ -39,7 +39,7 @@ body {
 #logo {
   margin-top: 0px;
   height: auto;
-  width: 50%;
+  width: 43%;
 }
 
 #logo1 {
@@ -85,6 +85,23 @@ body {
   padding-bottom: 0px;
 }
 
+.imagenPresentacionPozos {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+
+.imagenPresentacionEmpalmes {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+
+.imagenPresentacionTei {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
 
 .imagen1 {
   padding: 150px;
@@ -96,10 +113,10 @@ body {
   position:relative;
   display: block;
   margin: auto;
-  margin-bottom: -65px;
+  /* margin-bottom: -65px; */
   margin-top: 0px;
-  height: 60%;
-  width: 40%;
+  height: 50%;
+  width: 30%;
   padding: 0px;
 }
 
@@ -125,7 +142,7 @@ body {
   padding-right: 0px;
   margin-bottom: 0px;
   position: relative;
-  width: 100%;
+  height: 100%;
   /* min-height: calc(100vh - 112px); */
   /* height: 100%; */
   /* min-height: calc(100vh - 400px); */
@@ -171,10 +188,11 @@ body {
 
 
 #quienes-somos {
-  padding: 10%;
+  padding: 5%;
   position: relative;
-  height: 130%;
-  width: 100%;
+  height: 100%;
+  width: 80%;
+  z-index: 5;
   /* width: 100%; */
 }
 
@@ -385,6 +403,7 @@ footer{
   height: 67px;
   font-weight: bold;
   color: rgb(0, 80, 94); 
+  clear: right;
   /* padding-bottom: 2px; */
   /* margin-bottom: -5 px; */
   /* position: inherit; */
@@ -774,7 +793,7 @@ h1, h3 { font-weight: 300; }
 
 h1 { color: #636363; }
 
-h3 { color: #4a89dc; }
+h3, h5 { color: #4a89dc; }
 
 form {
 	width: 380px;
@@ -1148,11 +1167,16 @@ a {
 
 
   @media (min-width: 1150px) {
+    
     .imagenproductos {
       position:relative;
       display: block;
-      height: 480px;
-      width: 400px;
+      /* height: 480px;
+      width: 400px; */
+    }
+
+    #cabecera {
+      float: none;
     }
   } 
 
@@ -1166,6 +1190,7 @@ a {
     height: 60%;
     width: 50%;
   }
+
 
   /* .hidden-xs {
     display: block;
