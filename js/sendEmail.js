@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
   // We use JSON.stringify here so the data can be sent as a string via HTTP
 	const body = JSON.stringify({
     senderName: name.value,
-    senderEmail: email.value,
+    senderEmail: mail.value,
     message: message.value
   });
 
@@ -40,7 +40,7 @@ form.addEventListener("submit", (event) => {
       success.innerText = "Su Solicitud ha sido enviada!";
       setTimeout(function() {success.innerText = "";}, 3000)
       name.value = "";
-      email.value = "";
+      mail.value = "";
       message.value = "";
 
     })
@@ -50,7 +50,7 @@ form.addEventListener("submit", (event) => {
       noSuccess.innerText = "Ha ocurrido un error.";
       setTimeout(function() {noSuccess.innerText = "";}, 3000)
       name.value = "";
-      email.value = "";
+      mail.value = "";
       message.value = "";
     });
 });
