@@ -1385,7 +1385,7 @@ a {
   }
 }
 
-@media only screen and (max-width:1110px) {
+@media only screen and (max-width:1220px) {
   [class*="prueba-responsive"] {
     width: 100%;
     float: none;
