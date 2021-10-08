@@ -111,6 +111,7 @@ body {
   justify-content: flex-start;
 }
 
+
 .items {
   height: 100px;
   padding-bottom: 0px;
@@ -160,6 +161,10 @@ body {
 .navbar-toggler {
   border-color: black;
   border: solid;
+}
+
+.navbar-toggler:hover {
+  background-color:rgb(110, 180, 222);
 }
 
 #cabecera {
@@ -339,8 +344,8 @@ width: auto;
 /* Linea divisiora */
 
 .linea_divisora {
-  border-color: rgb(0, 77, 93); 
-  background-color:rgb(0, 77, 93);
+  border-color: rgb(0, 80, 94); 
+  background-color:rgb(0, 80, 94);
   height: 5px;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -349,8 +354,8 @@ width: auto;
 }
 
 .linea_divisora1 {
-  border-color: rgb(255, 242, 18); 
-  background-color: rgb(255, 242, 18);
+  border-color: rgb(244, 216, 15); 
+  background-color: rgb(244, 216, 15);
   height: 5px;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -369,8 +374,8 @@ width: auto;
 }
 
 .linea_divisora3 {
-  border-color: rgb(0, 156, 186); 
-  background-color: rgb(0, 156, 186);
+  border-color: rgb(141, 191, 198); 
+  background-color: rgb(141, 191, 198);
   height: 5px;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -425,7 +430,7 @@ footer{
 
 
 .letras_mas_grandes{
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   color:rgb(0, 80, 94);
   text-align: justify;
 }
@@ -888,7 +893,7 @@ input:focus ~ .highlight {
   color: #fff;
   font-size: 16px;
   line-height: 20px;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   text-align: center;
   letter-spacing: 1px;
   background: transparent;
@@ -897,6 +902,7 @@ input:focus ~ .highlight {
   transition: all 0.15s ease;
   align-items: center;
 }
+
 .button:focus { outline: 0; }
 
 
@@ -904,10 +910,11 @@ input:focus ~ .highlight {
 
 .buttonBlue {
   background: rgb(0, 77, 93);
-  text-shadow: 1px 1px 0 rgb(110, 180, 222);
 }
 
-.buttonBlue:hover { background: rgb(110, 180, 222); }
+.buttonBlue:hover { 
+  background: rgb(110, 180, 222); 
+}
 
 
 /* Ripples container */
@@ -939,6 +946,13 @@ input:focus ~ .highlight {
 
 .ripples.is-active .ripplesCircle {
   animation: ripples .4s ease-in;
+}
+
+/* Página de TEI */
+
+.botonTEI {
+  width: 45%;
+  margin-left: 2%;
 }
 
 /* Interfaz de control */
@@ -1048,6 +1062,7 @@ footer img:focus , footer a:focus { outline: none; }
 a {
   padding-bottom: 0px;
 }
+
 
 /*Responsividad menor que */
 
@@ -1212,8 +1227,13 @@ a {
   }
 
   .button:focus { outline: 0; }
-}
 
+  .botonTEI {
+    width: 50%;
+    margin-left: 2%;
+  }
+
+}
 
 
 @media (max-width:768px) {     /*======= Menos de 768 px =======*/ 
@@ -1397,11 +1417,17 @@ a {
   }
 }
 
-@media only screen and (max-width:1220px) {
+@media only screen and (max-width:1420px) {
   [class*="prueba-responsive"] {
     width: 100%;
     float: none;
 }
+
+.botonTEI {
+  width: 25%;
+  margin-left: 2%;
+}
+
 }
 
 @media only screen and (max-width:1250px) {
@@ -1433,6 +1459,11 @@ a {
   margin-bottom: 20px;
   margin-top: 20px;
   padding: auto;
+}
+
+.botonTEI {
+  width: 30%;
+  margin-left: 2%;
 }
 
 }
