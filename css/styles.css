@@ -75,6 +75,10 @@ body {
   width: 43%;
 }
 
+#logo:hover {
+  width: 45%;
+}
+
 #logo1 {
   margin-top: 0px;
   height: 70px;
@@ -92,6 +96,11 @@ body {
 .hidden-xs {
   width: 4vw;
   height: 4vw;
+}
+
+.hidden-xs:hover {
+  width: 4.5vw;
+  height: 4.5vw;
 }
 
 
@@ -311,6 +320,13 @@ width: auto;
 
 /* -------------Formulario----------------- */
 
+/* Pagina de TEI */
+
+.tei-texto {
+  margin-top: 2%;
+  text-align: center;
+  font-size: em;
+}
 
 /* Tablero eléctrico Sumergible */
 
@@ -523,6 +539,7 @@ footer{
   margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  height: auto;
 }
 
 
@@ -608,6 +625,23 @@ footer{
 .accordion-body {
   color: rgb(0, 80, 94);
 }
+
+.botonServicios {
+  color: rgb(244, 216, 15);
+  font-weight: bold;
+  position: relative;
+  margin-left: 70%;
+}
+
+.botonServicios:hover {
+  font-size: large;
+  color: rgb(0, 80, 94);
+}
+
+.botonServicios:active {
+  color: rgb(0, 80, 94);
+}
+
 
 /*seccion de la ventana modal*/
 /* Z-index of #mask must lower than #boxes .window */
@@ -761,7 +795,6 @@ body {
 
 hgroup { 
 	text-align:center;
-	margin-top: 2em;
 }
 
 h1, h3 { font-weight: 300px; }
@@ -955,6 +988,10 @@ input:focus ~ .highlight {
   margin-left: 2%;
 }
 
+.botonTEI:hover {
+  filter: saturate(250%);
+}
+
 /* Interfaz de control */
 
 
@@ -1104,7 +1141,7 @@ a {
   }
 
   .letras_mas_grandes {
-      font-size: 2.1vw;
+      font-size: 2vw;
     }
   
   .color_letras_servicios2 {
@@ -1169,7 +1206,7 @@ a {
   }
 
   .letras_mas_grandes{
-    font-size: 2.5vw;
+    font-size: 2.1vw;
   }
 
 
@@ -1263,7 +1300,6 @@ a {
     height: 100px;
   }
 
-   
   #info {
     padding: 10px;
   }
@@ -1272,11 +1308,10 @@ a {
     font-size: 2vw;
   }
 
-   #cabecera-nosotros {
-     height: 700px;
-   }
+  #cabecera-nosotros {
+    height: 850px;
+  }
 
-   
   .sangria{
     padding-left: 30px;
     padding-right: 30px;
@@ -1334,6 +1369,12 @@ a {
   }
 }
 
+@media (max-width: 600px) {
+  h5 {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 576px) {
 
   .login {
@@ -1371,13 +1412,17 @@ a {
     text-align: center;
     margin: auto;
     }
+    
+    #cabecera-nosotros {
+      height: 700px;
+    }
 
     #quienes-somos {
-      font-size: 3vw;
+      font-size: 2.2vw;
     }
 
     .letras_mas_grandes{
-      font-size: 3vw;
+      font-size: 2.2w;
     }
   
   
@@ -1393,9 +1438,24 @@ a {
 
 }
 
-@media (max-width:475px) {
+@media (max-width:475px) {    
   .button {
-    width: 70%;
+    width: 50%;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width:420px) {
+  h5 {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 25px;
   }
 }
 
@@ -1406,6 +1466,15 @@ a {
     height: 70px;
     width: 160px;
   }
+
+  #cabecera-nosotros {
+    height: 500px;
+  }
+
+  .botonServicios {
+    margin-left: 60%;
+  }
+
 }
 
 @media (max-width:300px) {     /*======= Menos de 300 px =======*/
@@ -1466,4 +1535,11 @@ a {
   margin-left: 2%;
 }
 
+}
+
+@media (max-height: 930px) {
+  .login {
+    height: 600px;
+
+  }
 }
