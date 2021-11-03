@@ -38,6 +38,8 @@
     <!-- jQuery -->
     <script src="js/jquery-1.11.1.min.js"></script>
 
+    <link rel="icon" href="imagenes/iconos/home.png" type="image/png" />
+
     <!-- mover carrusel desde JavaScript -->
     <script src="js/jquery.tinycarousel.min.js"></script>
 
@@ -119,42 +121,80 @@
       
       <div class="linea_divisora1"></div>
 
+      <div class="linea_divisora3"></div>
+      
       <div class="linea_divisora2"></div>
       
+    </div> 
+      
+      
+	  <hgroup class="tei-texto">
+      <h1 style="color: rgb(0, 77, 93);">Tablero Eléctrico Inteligente TEI</h1>
+      <h5><I>Soluciones de automatización para Sistemas de bombeo de agua</I></h5>
+    </hgroup>
+
+    <div class="container-fluid" id="cabecera">
+      <div class="prueba-responsive">
+        <img class="imagenPresentacionPozos" id= "info" src="imagenes/infografias/tei13.png">
+      </div>
+      <div class="prueba-responsive2">
+        <h5><b>Pioneros en Venezuela</b></h5>
+        <p>La primera opción de tablero Inteligente en el mercado Venezolano se la
+          ofrecemos nosotros, Conozca nuestra solución Inteligente TEI</p><br>
+        
+        <h5><b>TEI es un Sistema Inteligente</b></h5>
+        <p>Con TEI puedes lograr la automatización y control de su Tablero Eléctrico que regula
+          sus dispositivos para extracción y administración de agua, que le brinda:</p><br>
+      
+        <p>- Gestión remota de pozos profundos</p>
+        <p>- Gestión automatizada de válvulas de agua</p>
+        <p>- Automatización de manejo de tanques
+          almacenadores de agua</p>
+        <p>- Automatización de procesos de bombeo
+          para equipos superficiales</p><br>
+        <a href="contactos.html">
+          <img class="botonTEI" src="imagenes/iconos/quieroUteiLargo.png" alt="">
+        </a>
+        <a href="https://tei.auth.eu-central-1.amazoncognito.com/login?client_id=7g3i7fpuuotl1d7jjevu29pilq&response_type=token&scope=email+https://tei.logo.actions/logo.off+https://tei.logo.actions/logo.on+openid&redirect_uri=https://d30a2flcb4p1wx.cloudfront.net">
+          <img class="botonTEI" src="imagenes/iconos/soyUteiLargo.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div style="clear: left;" class="container-fluid" id="cabecera">
+      
+      <div class="linea_divisora1"></div>
+
       <div class="linea_divisora3"></div>
+      
+      <div class="linea_divisora2"></div>
       
     </div> 
 
-    
-	  <hgroup>
-      <h1 style="color: rgb(0, 77, 93);">Tableros Eléctricos Inteligentes</h1>
-    </hgroup>
-
-    <!-- <form class="login">
-      <div class="group">
-        <input type="text"><span class="highlight"></span><span class="bar"></span>
-        <label>Usuario</label>
+    <div class="container-fluid" id="cabecera">
+      <div class="prueba-responsive3">
+        <img class="imagenPresentacionTei" id= "info" src="imagenes/infografias/tei14.png">
       </div>
-      <div class="group">
-        <input type="email"><span class="highlight"></span><span class="bar"></span>
-        <label>PLC ID</label>
+      <div class="prueba-responsive4">
+        <h5><b>Sea un Usuario TEI</b></h5>
+        <p>Diseñamos y actualizamos su Tablero Eléctrico Inteligente que le brinda acceso
+          y control remoto de acuerdo a sus requerimientos, desde 5,5hp hasta 30hp de
+          potencia</p><br>
+        <h5><b>Beneficios de TEI</b></h5>
+        <p>- Optimización del tiempo de trabajo</p>
+        <p>- Optimización de sus recursos</p>
+        <p>- Recepción de alertas sobre el funcionamiento de su bomba</p>
+        <p>- Ofrecemos soluciones en servicio de internet para su caso</p><br>
+        <a href="contactos.html">
+          <img class="botonTEI" src="imagenes/iconos/quieroUteiLargo.png" alt="">
+        </a>
+        <a href="https://tei.auth.eu-central-1.amazoncognito.com/login?client_id=7g3i7fpuuotl1d7jjevu29pilq&response_type=token&scope=email+https://tei.logo.actions/logo.off+https://tei.logo.actions/logo.on+openid&redirect_uri=https://d30a2flcb4p1wx.cloudfront.net">
+          <img class="botonTEI" src="imagenes/iconos/soyUteiLargo.png" alt="">
+        </a>
       </div>
-      <div class="group">
-        <input type="number"><span class="highlight"></span><span class="bar"></span>
-        <label>Contraseña</label>
-      </div>
-      <button type="submit" class="button buttonBlue">Iniciar Sesión
-        <div class="ripples buttonRipples">
-          <span class="ripplesCircle">
-            <a class="nav-link active" aria-current="page" href="controlMotor.html"></a>
-          </span>
-        </div>
-      </button>
+    </div>
 
-      <a href="docs/flyer.pdf" download="TEI.pdf"> Saber más de TEI</a>
-    </form><br><br> -->
-
-    <footer class="bg-light text-center text-md-start">
+    <footer style="clear: right" class="bg-light text-center text-md-start">
       <div class="text-center p-3 base">
         Agropezim Group C.A. RIF: J-404095969 Venezuela, <br> 
         San Felipe - Estado Yaracuy. Todos los Derechos Reservados 2014.
@@ -162,41 +202,6 @@
     </footer>
     
     <script>
-$(window, document, undefined).ready(function() {
-
-$('input').blur(function() {
-  var $this = $(this);
-  if ($this.val())
-    $this.addClass('used');
-  else
-    $this.removeClass('used');
-});
-
-var $ripples = $('.ripples');
-
-$ripples.on('click.Ripples', function(e) {
-
-  var $this = $(this);
-  var $offset = $this.parent().offset();
-  var $circle = $this.find('.ripplesCircle');
-
-  var x = e.pageX - $offset.left;
-  var y = e.pageY - $offset.top;
-
-  $circle.css({
-    top: y + 'px',
-    left: x + 'px'
-  });
-
-  $this.addClass('is-active');
-
-});
-
-$ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
-  $(this).removeClass('is-active');
-});
-
-});
     </script>
 
   </body>
